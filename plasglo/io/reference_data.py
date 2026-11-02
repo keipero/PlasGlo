@@ -79,7 +79,7 @@ def driver_conditions(path):
 
     Examples
     --------
-    >>> from py3zdplaschem.paths import SAMPLES_DIR
+    >>> from plasglo.paths import SAMPLES_DIR
     >>> values = driver_conditions(
     ...     SAMPLES_DIR / "nitrogen/user_code.F90"
     ... )

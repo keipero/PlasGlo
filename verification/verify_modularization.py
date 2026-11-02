@@ -12,9 +12,9 @@ import numpy as np
 
 MODEL = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(MODEL))
-simulate = import_module("py3zdplaschem").simulate
+simulate = import_module("plasglo").simulate
 VERIFICATION_OUTPUT_DIR = import_module(
-    "py3zdplaschem.paths"
+    "plasglo.paths"
 ).VERIFICATION_OUTPUT_DIR
 run_case = import_module("samples.gases.run_samples").run_case
 
@@ -110,9 +110,9 @@ report["cases"]["nitrogen"] = compare("nitrogen", names, time, density)
 # Exercise previous imports to ensure they re-export exactly the
 # canonical types.
 legacy_mechanism = import_module("kinetics").Mechanism
-Mechanism = import_module("py3zdplaschem.chemistry.mechanism").Mechanism
+Mechanism = import_module("plasglo.chemistry.mechanism").Mechanism
 legacy_swarm = import_module("bolos_coupling").BolosSwarm
-BolosSwarm = import_module("py3zdplaschem.electrons.bolos_backend").BolosSwarm
+BolosSwarm = import_module("plasglo.electrons.bolos_backend").BolosSwarm
 
 assert legacy_mechanism is Mechanism and legacy_swarm is BolosSwarm
 report["legacy_imports_compatible"] = True

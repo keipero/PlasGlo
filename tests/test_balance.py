@@ -5,7 +5,7 @@ import unittest
 
 import numpy as np
 
-from py3zdplaschem import Mechanism, Reaction, Result, species_balance
+from plasglo import Mechanism, Reaction, Result, species_balance
 
 
 class BalanceTests(unittest.TestCase):

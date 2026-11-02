@@ -5,7 +5,7 @@ from collections import Counter
 from pathlib import Path
 
 import pytest
-from py3zdplaschem.chemistry.reactions import (
+from plasglo.chemistry.reactions import (
     parse_side,
     composition,
     Reaction,

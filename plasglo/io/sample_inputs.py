@@ -27,7 +27,7 @@ def verify_sample_inputs(folder):
 
     Examples
     --------
-    >>> from py3zdplaschem.paths import SAMPLES_DIR
+    >>> from plasglo.paths import SAMPLES_DIR
     >>> entries = verify_sample_inputs(SAMPLES_DIR / "argon")
     >>> len(entries)
     3
@@ -65,7 +65,7 @@ def read_species(path):
 
     Examples
     --------
-    >>> from py3zdplaschem.paths import SAMPLES_DIR
+    >>> from plasglo.paths import SAMPLES_DIR
     >>> read_species(SAMPLES_DIR / "argon/kinet.inp")
     ['E', 'AR', 'AR^+']
     """

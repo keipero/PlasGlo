@@ -25,7 +25,7 @@ def _():
     model_dir = Path(__file__).resolve().parent.parent
     if str(model_dir) not in sys.path:
         sys.path.insert(0, str(model_dir))
-    from py3zdplaschem import (
+    from plasglo import (
         simulate,
         plot_result,
         save_result,

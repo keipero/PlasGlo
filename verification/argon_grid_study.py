@@ -13,19 +13,19 @@ from scipy.integrate import solve_ivp
 MODEL = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(MODEL))
 VERIFICATION_OUTPUT_DIR = import_module(
-    "py3zdplaschem.paths"
+    "plasglo.paths"
 ).VERIFICATION_OUTPUT_DIR
-SAMPLE_OUTPUT_DIR = import_module("py3zdplaschem.paths").SAMPLE_OUTPUT_DIR
-grid = import_module("py3zdplaschem.electrons.bolos_backend").grid
-parser = import_module("py3zdplaschem.electrons.bolos_backend").parser
-solver = import_module("py3zdplaschem.electrons.bolos_backend").solver
+SAMPLE_OUTPUT_DIR = import_module("plasglo.paths").SAMPLE_OUTPUT_DIR
+grid = import_module("plasglo.electrons.bolos_backend").grid
+parser = import_module("plasglo.electrons.bolos_backend").parser
+solver = import_module("plasglo.electrons.bolos_backend").solver
 normalize_eedf = import_module(
-    "py3zdplaschem.electrons.bolos_backend"
+    "plasglo.electrons.bolos_backend"
 ).normalize_eedf
 SampleMechanism = import_module(
-    "py3zdplaschem.chemistry.sample_mechanism"
+    "plasglo.chemistry.sample_mechanism"
 ).SampleMechanism
-read_csv = import_module("py3zdplaschem.io.reference_data").read_csv
+read_csv = import_module("plasglo.io.reference_data").read_csv
 
 SAMPLE = MODEL / "samples/gases/argon"
 OUT = VERIFICATION_OUTPUT_DIR

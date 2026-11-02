@@ -104,7 +104,7 @@ class Case:
 
         Examples
         --------
-        >>> from py3zdplaschem import load_case
+        >>> from plasglo import load_case
         >>> case = load_case("nitrogen")
         >>> changed = case.with_updates(field={"td": 500.0})
         >>> changed.data["field"]["td"], case.data["field"]["td"]
@@ -133,7 +133,7 @@ class Case:
 
         Examples
         --------
-        >>> from py3zdplaschem import load_case
+        >>> from plasglo import load_case
         >>> model = load_case("nitrogen").build_network()
         >>> len(model.species), len(model.reactions)
         (21, 96)
@@ -295,7 +295,7 @@ class Case:
 
         Examples
         --------
-        >>> from py3zdplaschem import load_case
+        >>> from plasglo import load_case
         >>> settings = load_case("argon").electron_settings()
         >>> settings["profile_data"]["targets"]
         {'Ar': 'AR'}
@@ -369,7 +369,7 @@ class Case:
         Examples
         --------
         >>> from pathlib import Path
-        >>> from py3zdplaschem import load_case
+        >>> from plasglo import load_case
         >>> data = load_case("argon").resolved_data()
         >>> Path(data["mechanism"]["reactions"]).is_absolute()
         True

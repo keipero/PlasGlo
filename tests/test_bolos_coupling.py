@@ -6,9 +6,9 @@ import unittest
 
 import numpy as np
 
-from py3zdplaschem.electrons.bolos_backend import BOLOS_DIR, BolosSwarm
+from plasglo.electrons.bolos_backend import BOLOS_DIR, BolosSwarm
 from bolos import solver
-from py3zdplaschem import Mechanism, read_reactions, simulate
+from plasglo import Mechanism, read_reactions, simulate
 
 
 class BolosConnectionTests(unittest.TestCase):

@@ -8,10 +8,10 @@ import unittest
 
 import numpy as np
 
-from py3zdplaschem import (
+from plasglo import (
     Result, analyze_pathways, save_pathways, species_balance,
 )
-from py3zdplaschem.chemistry.network import (
+from plasglo.chemistry.network import (
     NetworkReaction, ReactionNetwork, Species,
 )
 

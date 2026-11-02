@@ -1,15 +1,15 @@
 r"""ZDPlasKin比較用の互換CLI・API。
 """
 
-from py3zdplaschem.chemistry.sample_mechanism import (
+from plasglo.chemistry.sample_mechanism import (
     SampleMechanism,
     Expression,
     side,
     number,
 )
-from py3zdplaschem.electrons.sample_swarm import solve_sample_swarm
-from py3zdplaschem.io.reference_data import read_csv, driver_conditions
-from py3zdplaschem.validation.zdplaskin import (
+from plasglo.electrons.sample_swarm import solve_sample_swarm
+from plasglo.io.reference_data import read_csv, driver_conditions
+from plasglo.validation.zdplaskin import (
     replay_archive,
     native_control,
     build_report,

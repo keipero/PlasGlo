@@ -10,11 +10,11 @@ import sys
 MODEL = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(MODEL))
 VERIFICATION_OUTPUT_DIR = import_module(
-    "py3zdplaschem.paths"
+    "plasglo.paths"
 ).VERIFICATION_OUTPUT_DIR
-SAMPLE_OUTPUT_DIR = import_module("py3zdplaschem.paths").SAMPLE_OUTPUT_DIR
+SAMPLE_OUTPUT_DIR = import_module("plasglo.paths").SAMPLE_OUTPUT_DIR
 solve_sample_swarm = import_module(
-    "py3zdplaschem.electrons.sample_swarm"
+    "plasglo.electrons.sample_swarm"
 ).solve_sample_swarm
 
 

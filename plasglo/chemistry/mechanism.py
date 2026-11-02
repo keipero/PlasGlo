@@ -75,7 +75,7 @@ class Mechanism(MassActionKernel):
         --------
         反応リストを読み込み、電子群データを使わずに初期化する。
 
-        >>> from py3zdplaschem import Mechanism, read_reactions
+        >>> from plasglo import Mechanism, read_reactions
         >>> model = Mechanism(read_reactions(), None, field_td=100.0)
         >>> model.initial_fractions
         {'N2': 0.8, 'O2': 0.19999999999999996}
@@ -209,7 +209,7 @@ class Mechanism(MassActionKernel):
         --------
         反応機構を作成した後、電子群テーブルからデータを取得して設定する。
 
-        >>> from py3zdplaschem import (
+        >>> from plasglo import (
         ...     Mechanism,
         ...     read_reactions,
         ...     read_swarm,
@@ -282,7 +282,7 @@ class Mechanism(MassActionKernel):
 
         Examples
         --------
-        >>> from py3zdplaschem import Mechanism, read_reactions
+        >>> from plasglo import Mechanism, read_reactions
         >>> model = Mechanism(read_reactions(), None, field_td=100.0)
         >>> state = model.initial_state(1.0e13)
         >>> bool(state[model.index['e']] > 0)
@@ -322,7 +322,7 @@ class Mechanism(MassActionKernel):
 
         Examples
         --------
-        >>> from py3zdplaschem import load_case, simulate
+        >>> from plasglo import load_case, simulate
         >>> case = load_case("argon").with_updates(
         ...     solver={"end_ns": 0.01, "points": 3},
         ...     electrons={"cells": 100},
@@ -358,7 +358,7 @@ class Mechanism(MassActionKernel):
 
         Examples
         --------
-        >>> from py3zdplaschem import Mechanism, read_reactions
+        >>> from plasglo import Mechanism, read_reactions
         >>> model = Mechanism(read_reactions(), None, field_td=100.0)
         >>> rates = model.reaction_rates(model.initial_state(1.0e13))
         >>> rates.shape == (len(model.reactions),)
@@ -388,7 +388,7 @@ class Mechanism(MassActionKernel):
 
         Examples
         --------
-        >>> from py3zdplaschem import load_case, simulate
+        >>> from plasglo import load_case, simulate
         >>> case = load_case("argon").with_updates(
         ...     solver={"end_ns": 0.01, "points": 3},
         ...     electrons={"cells": 100},
@@ -423,7 +423,7 @@ class Mechanism(MassActionKernel):
 
         Examples
         --------
-        >>> from py3zdplaschem import load_case, simulate
+        >>> from plasglo import load_case, simulate
         >>> case = load_case("argon").with_updates(
         ...     solver={"end_ns": 0.01, "points": 3},
         ...     electrons={"cells": 100},

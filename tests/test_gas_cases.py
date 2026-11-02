@@ -8,13 +8,13 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from py3zdplaschem import load_case, simulate, save_result, species_balance
-from py3zdplaschem.chemistry.network import (
+from plasglo import load_case, simulate, save_result, species_balance
+from plasglo.chemistry.network import (
     ReactionNetwork,
     NetworkReaction,
     Species,
 )
-from py3zdplaschem.electrons.mixture import ElectronSwarm
+from plasglo.electrons.mixture import ElectronSwarm
 
 
 def write_json(path, data):

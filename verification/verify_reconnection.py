@@ -18,13 +18,13 @@ WORKSPACE = MODEL.parent
 REFERENCE = WORKSPACE.parent / "ZDplasKin_analysis"
 sys.path.insert(0, str(MODEL))
 VERIFICATION_OUTPUT_DIR = import_module(
-    "py3zdplaschem.paths"
+    "plasglo.paths"
 ).VERIFICATION_OUTPUT_DIR
-SAMPLE_OUTPUT_DIR = import_module("py3zdplaschem.paths").SAMPLE_OUTPUT_DIR
+SAMPLE_OUTPUT_DIR = import_module("plasglo.paths").SAMPLE_OUTPUT_DIR
 native_control = import_module(
-    "py3zdplaschem.validation.zdplaskin"
+    "plasglo.validation.zdplaskin"
 ).native_control
-read_csv = import_module("py3zdplaschem.io.reference_data").read_csv
+read_csv = import_module("plasglo.io.reference_data").read_csv
 
 OUT = VERIFICATION_OUTPUT_DIR
 

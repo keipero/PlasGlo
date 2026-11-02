@@ -3,7 +3,7 @@
 入力設定は **ケースJSON＋反応CSV** の2ファイルです。電子計算を行う場合は、別途そのガスの断面積を用意します。粒子種・第三体・電子衝突の対応をケースJSONにまとめ、ガス種ごとのPythonソルバーは作りません。JSONとCSVには標準ライブラリを使い、新しい依存パッケージは追加していません。
 
 ```python
-from py3zdplaschem import load_case, simulate, save_result
+from plasglo import load_case, simulate, save_result
 
 case = load_case("nitrogen")  # または自分のケースJSONのパス
 result = simulate(case)

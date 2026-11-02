@@ -152,7 +152,7 @@ def main():
     attempted, failed = 0, 0
     if args.examples and not errors:
         os.environ.setdefault("MPLBACKEND", "Agg")
-        package = import_module("py3zdplaschem")
+        package = import_module("plasglo")
         for item in pkgutil.walk_packages(
             package.__path__, package.__name__ + "."
         ):

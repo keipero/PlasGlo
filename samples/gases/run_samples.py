@@ -14,7 +14,7 @@ if str(MODEL_DIR) not in sys.path:
     sys.path.insert(0, str(MODEL_DIR))
 
 
-SAMPLE_OUTPUT_DIR = import_module("py3zdplaschem.paths").SAMPLE_OUTPUT_DIR
+SAMPLE_OUTPUT_DIR = import_module("plasglo.paths").SAMPLE_OUTPUT_DIR
 
 
 def run_case(name, output=None, *, cells=400):
@@ -47,7 +47,7 @@ def run_case(name, output=None, *, cells=400):
     >>> len(names), density.shape[0]
     (3, 3)
     """
-    from py3zdplaschem import load_case, simulate, save_result
+    from plasglo import load_case, simulate, save_result
 
     if name not in ("nitrogen", "argon"):
         raise ValueError("Choose nitrogen or argon.")

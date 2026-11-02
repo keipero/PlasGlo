@@ -51,7 +51,7 @@ def species_balance(result, species):
 
     Examples
     --------
-    >>> from py3zdplaschem import load_case, simulate
+    >>> from plasglo import load_case, simulate
     >>> case = load_case("argon").with_updates(
     ...     solver={"end_ns": 0.01, "points": 3},
     ...     electrons={"cells": 100},

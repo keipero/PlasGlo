@@ -29,7 +29,7 @@ def solve_sample_swarm(path, field, temperature, cells=400, *, target="N2"):
 
     Examples
     --------
-    >>> from py3zdplaschem.paths import SAMPLES_DIR
+    >>> from plasglo.paths import SAMPLES_DIR
     >>> rates, info, collisions = solve_sample_swarm(
     ...     SAMPLES_DIR / "argon/bolsigdb.dat", 51.0, 301.0,
     ...     cells=100, target="Ar",

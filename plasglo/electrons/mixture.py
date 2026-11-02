@@ -50,8 +50,8 @@ def normalize_eedf(b, distribution):
 
     Examples
     --------
-    >>> from py3zdplaschem import load_case
-    >>> from py3zdplaschem.electrons.mixture import ElectronSwarm
+    >>> from plasglo import load_case
+    >>> from plasglo.electrons.mixture import ElectronSwarm
     >>> profile = load_case("argon").electron_settings()["profile_data"]
     >>> backend = ElectronSwarm(
     ...     profile["cross_sections"], profile["targets"],
@@ -136,8 +136,8 @@ class ElectronSwarm:
 
         Examples
         --------
-        >>> from py3zdplaschem import load_case
-        >>> from py3zdplaschem.electrons.mixture import ElectronSwarm
+        >>> from plasglo import load_case
+        >>> from plasglo.electrons.mixture import ElectronSwarm
         >>> profile = load_case("argon").electron_settings()[
         ...     "profile_data"
         ... ]
@@ -336,8 +336,8 @@ class ElectronSwarm:
 
         Examples
         --------
-        >>> from py3zdplaschem import load_case
-        >>> from py3zdplaschem.electrons.mixture import ElectronSwarm
+        >>> from plasglo import load_case
+        >>> from plasglo.electrons.mixture import ElectronSwarm
         >>> profile = load_case("argon").electron_settings()[
         ...     "profile_data"
         ... ]

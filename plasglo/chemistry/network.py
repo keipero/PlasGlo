@@ -153,7 +153,7 @@ class ReactionNetwork(MassActionKernel):
 
         Examples
         --------
-        >>> from py3zdplaschem import load_case
+        >>> from plasglo import load_case
         >>> model = load_case("argon").build_network()
         >>> model.elements
         ['Ar']
@@ -367,7 +367,7 @@ class ReactionNetwork(MassActionKernel):
 
         Examples
         --------
-        >>> from py3zdplaschem import load_case, simulate
+        >>> from plasglo import load_case, simulate
         >>> case = load_case("argon").with_updates(
         ...     solver={"end_ns": 0.01, "points": 3},
         ...     electrons={"cells": 100},
@@ -415,7 +415,7 @@ class ReactionNetwork(MassActionKernel):
 
         Examples
         --------
-        >>> from py3zdplaschem import load_case, simulate
+        >>> from plasglo import load_case, simulate
         >>> case = load_case("argon").with_updates(
         ...     solver={"end_ns": 0.01, "points": 3},
         ...     electrons={"cells": 100},
@@ -499,7 +499,7 @@ class ReactionNetwork(MassActionKernel):
 
         Examples
         --------
-        >>> from py3zdplaschem import load_case
+        >>> from plasglo import load_case
         >>> model = load_case("argon").build_network()
         >>> model.initial_state().shape
         (3,)

@@ -46,7 +46,7 @@ python Py3ZDPlasChem-master/verification/check_resolution.py
 
 ## 2026-11-01：電流試作の退避とモジュール化
 
-現在の実行入口は `notebooks/`・`examples/`・`samples/`、計算本体は `py3zdplaschem/`、全ての既定出力は `outputs/` に分離しました。[構成と拡張方針](../docs/ARCHITECTURE.md)を参照してください。
+現在の実行入口は `notebooks/`・`examples/`・`samples/`、計算本体は `plasglo/`、全ての既定出力は `outputs/` に分離しました。[構成と拡張方針](../docs/ARCHITECTURE.md)を参照してください。
 
 `verify_modularization.py` で窒素・アルゴン・空気パルスを分割前の同一環境の密度履歴と比較し、全ケースの最大差が0であることを確認しました。元入力と退避した試作コードもSHA-256で一致しています。記録は `../outputs/verification/modularization/report.json` と `moves.json` です。
 

@@ -30,7 +30,7 @@ def save_result(result, output, species=None, *, balance_species=None):
 
     Examples
     --------
-    >>> from py3zdplaschem import load_case, simulate
+    >>> from plasglo import load_case, simulate
     >>> case = load_case("argon").with_updates(
     ...     solver={"end_ns": 0.01, "points": 3},
     ...     electrons={"cells": 100},

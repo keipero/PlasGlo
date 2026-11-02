@@ -14,12 +14,12 @@ import numpy as np
 
 MODEL = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(MODEL))
-load_case = import_module("py3zdplaschem").load_case
-simulate = import_module("py3zdplaschem").simulate
-save_result = import_module("py3zdplaschem").save_result
-read_csv = import_module("py3zdplaschem.io.reference_data").read_csv
+load_case = import_module("plasglo").load_case
+simulate = import_module("plasglo").simulate
+save_result = import_module("plasglo").save_result
+read_csv = import_module("plasglo.io.reference_data").read_csv
 native_control = import_module(
-    "py3zdplaschem.validation.zdplaskin"
+    "plasglo.validation.zdplaskin"
 ).native_control
 
 

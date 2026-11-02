@@ -1,9 +1,9 @@
 # 反応経路解析
 
-`py3zdplaschem/diagnostics/pathways.py` は、計算済みの `Result` を入力とする後処理です。密度積分や電子計算を再実行せず、任意のガス種に共通する反応カーネルを使います。追加の実行時依存パッケージはありません。
+`plasglo/diagnostics/pathways.py` は、計算済みの `Result` を入力とする後処理です。密度積分や電子計算を再実行せず、任意のガス種に共通する反応カーネルを使います。追加の実行時依存パッケージはありません。
 
 ```python
-from py3zdplaschem import analyze_pathways, save_pathways
+from plasglo import analyze_pathways, save_pathways
 
 paths = analyze_pathways(result, "N")  # 保存した全時間区間
 # paths = analyze_pathways(result, "N", time_range_s=(0.2e-9, 0.8e-9))

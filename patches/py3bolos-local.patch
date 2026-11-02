@@ -1,0 +1,18 @@
+diff --git a/bolos/solver.py b/bolos/solver.py
+index ee9de04..c7717b7 100644
+--- a/bolos/solver.py
++++ b/bolos/solver.py
+@@ -127,6 +127,8 @@ class BoltzmannSolver(object):
+ 
+         self.density = dict()
+         
++        # Gas temperature in eV; set by the caller before init().
++        self.kT = None
+         self.EN = None
+ 
+         self.grid = grid
+@@ -855,4 +857,3 @@ class BoltzmannSolver(object):
+ 
+         de52 = np.diff(self.benergy**2.5)
+         return np.sum(0.4 * F0 * de52)
+-

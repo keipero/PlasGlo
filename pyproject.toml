@@ -1,0 +1,7 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+norecursedirs = ["archive", "outputs", "Py3bolos"]
+
+[tool.ty.rules]
+unresolved-import = "ignore"

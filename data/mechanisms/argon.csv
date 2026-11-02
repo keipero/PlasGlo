@@ -1,0 +1,3 @@
+id,equation,kind,value,parameters,length_unit,source_file,line,reference
+R001,E + AR -> E + E + AR^+,electron,AR->AR^+,,m,../../samples/gases/argon/kinet.inp,24,Unmodified argon sample; see samples/gases/argon/provenance.json
+R002,E + AR^+ + AR -> AR + AR,expression,1.0d-25,,cm,../../samples/gases/argon/kinet.inp,25,Unmodified argon sample; see samples/gases/argon/provenance.json

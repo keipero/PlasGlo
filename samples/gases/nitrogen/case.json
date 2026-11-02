@@ -1,0 +1,20 @@
+{
+  "conditions": {
+    "temperature_k": 300.0,
+    "field_td": 1000.0,
+    "pressure_pa": 101325.0,
+    "seed_density": 100000000.0,
+    "end_time_s": 1e-09
+  },
+  "target": "N2",
+  "counts": [
+    21,
+    96
+  ],
+  "initial_densities_cm3": {
+    "E": 100000000.0,
+    "N2": 2.4463132917924827e+19,
+    "N2^+": 100000000.0
+  },
+  "output_intervals": 10000
+}

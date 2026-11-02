@@ -1,0 +1,135 @@
+id,equation,kind,value,parameters,length_unit,source_file,line,reference
+R001,e + N2 -> e + N2*(J),electron,C2,,m,air_chemistry_Komuro_reactions.txt,11,Original Komuro mechanism; see air_chemistry_provenance.json
+R002,e + O2 -> e + O2*(J),electron,C30,,m,air_chemistry_Komuro_reactions.txt,12,Original Komuro mechanism; see air_chemistry_provenance.json
+R003,e + N2 -> e + N2*(v1),electron,C3,,m,air_chemistry_Komuro_reactions.txt,14,Original Komuro mechanism; see air_chemistry_provenance.json
+R004,e + N2 -> e + N2*(v1),electron,C4,,m,air_chemistry_Komuro_reactions.txt,15,Original Komuro mechanism; see air_chemistry_provenance.json
+R005,e + N2 -> e + N2*(v2),electron,C5,,m,air_chemistry_Komuro_reactions.txt,16,Original Komuro mechanism; see air_chemistry_provenance.json
+R006,e + N2 -> e + N2*(v3),electron,C6,,m,air_chemistry_Komuro_reactions.txt,17,Original Komuro mechanism; see air_chemistry_provenance.json
+R007,e + N2 -> e + N2*(v4),electron,C7,,m,air_chemistry_Komuro_reactions.txt,18,Original Komuro mechanism; see air_chemistry_provenance.json
+R008,e + N2 -> e + N2*(v5),electron,C8,,m,air_chemistry_Komuro_reactions.txt,19,Original Komuro mechanism; see air_chemistry_provenance.json
+R009,e + N2 -> e + N2*(v6),electron,C9,,m,air_chemistry_Komuro_reactions.txt,20,Original Komuro mechanism; see air_chemistry_provenance.json
+R010,e + N2 -> e + N2*(v7),electron,C10,,m,air_chemistry_Komuro_reactions.txt,21,Original Komuro mechanism; see air_chemistry_provenance.json
+R011,e + N2 -> e + N2*(v8),electron,C11,,m,air_chemistry_Komuro_reactions.txt,22,Original Komuro mechanism; see air_chemistry_provenance.json
+R012,e + O2 -> e + O2*(v1),electron,C31,,m,air_chemistry_Komuro_reactions.txt,23,Original Komuro mechanism; see air_chemistry_provenance.json
+R013,e + O2 -> e + O2*(v1),electron,C32,,m,air_chemistry_Komuro_reactions.txt,24,Original Komuro mechanism; see air_chemistry_provenance.json
+R014,e + O2 -> e + O2*(v2),electron,C33,,m,air_chemistry_Komuro_reactions.txt,25,Original Komuro mechanism; see air_chemistry_provenance.json
+R015,e + O2 -> e + O2*(v2),electron,C34,,m,air_chemistry_Komuro_reactions.txt,26,Original Komuro mechanism; see air_chemistry_provenance.json
+R016,e + O2 -> e + O2*(v3),electron,C35,,m,air_chemistry_Komuro_reactions.txt,27,Original Komuro mechanism; see air_chemistry_provenance.json
+R017,e + O2 -> e + O2*(v4),electron,C36,,m,air_chemistry_Komuro_reactions.txt,28,Original Komuro mechanism; see air_chemistry_provenance.json
+R018,e + N2 -> e + N2*(A1),electron,C12,,m,air_chemistry_Komuro_reactions.txt,30,Original Komuro mechanism; see air_chemistry_provenance.json
+R019,e + N2 -> e + N2*(A2),electron,C13,,m,air_chemistry_Komuro_reactions.txt,31,Original Komuro mechanism; see air_chemistry_provenance.json
+R020,e + N2 -> e + N2*(B),electron,C14,,m,air_chemistry_Komuro_reactions.txt,32,Original Komuro mechanism; see air_chemistry_provenance.json
+R021,e + N2 -> e + N2*(B),electron,C15,,m,air_chemistry_Komuro_reactions.txt,33,Original Komuro mechanism; see air_chemistry_provenance.json
+R022,e + N2 -> e + N2*(B),electron,C16,,m,air_chemistry_Komuro_reactions.txt,34,Original Komuro mechanism; see air_chemistry_provenance.json
+R023,e + N2 -> e + N2*(B),electron,C17,,m,air_chemistry_Komuro_reactions.txt,35,Original Komuro mechanism; see air_chemistry_provenance.json
+R024,e + N2 -> e + N2*(a),electron,C18,,m,air_chemistry_Komuro_reactions.txt,36,Original Komuro mechanism; see air_chemistry_provenance.json
+R025,e + N2 -> e + N2*(a),electron,C19,,m,air_chemistry_Komuro_reactions.txt,37,Original Komuro mechanism; see air_chemistry_provenance.json
+R026,e + N2 -> e + N2*(a),electron,C20,,m,air_chemistry_Komuro_reactions.txt,38,Original Komuro mechanism; see air_chemistry_provenance.json
+R027,e + N2 -> e + N2*(C),electron,C21,,m,air_chemistry_Komuro_reactions.txt,39,Original Komuro mechanism; see air_chemistry_provenance.json
+R028,e + N2 -> e + N2*(E),electron,C22,,m,air_chemistry_Komuro_reactions.txt,40,Original Komuro mechanism; see air_chemistry_provenance.json
+R029,e + N2 -> e + N2*(E),electron,C23,,m,air_chemistry_Komuro_reactions.txt,41,Original Komuro mechanism; see air_chemistry_provenance.json
+R030,e + O2 -> e + O2*(a),electron,C37,,m,air_chemistry_Komuro_reactions.txt,42,Original Komuro mechanism; see air_chemistry_provenance.json
+R031,e + O2 -> e + O2*(b),electron,C38,,m,air_chemistry_Komuro_reactions.txt,43,Original Komuro mechanism; see air_chemistry_provenance.json
+R032,e + O2 -> e + O2*(A),electron,C39,,m,air_chemistry_Komuro_reactions.txt,44,Original Komuro mechanism; see air_chemistry_provenance.json
+R033,e + N2 -> e + N(^4S) + N(^2D),electron,C24,,m,air_chemistry_Komuro_reactions.txt,46,Original Komuro mechanism; see air_chemistry_provenance.json
+R034,e + O2 -> e + O(^3P) + O(^3P),electron,C40,,m,air_chemistry_Komuro_reactions.txt,47,Original Komuro mechanism; see air_chemistry_provenance.json
+R035,e + O2 -> e + O(^3P) + O(^1D),electron,C41,,m,air_chemistry_Komuro_reactions.txt,48,Original Komuro mechanism; see air_chemistry_provenance.json
+R036,e + O2 -> e + O(^3P) + O(^1S),electron,C42,,m,air_chemistry_Komuro_reactions.txt,49,Original Komuro mechanism; see air_chemistry_provenance.json
+R037,e + N2 -> e + e + N2+,electron,C25,,m,air_chemistry_Komuro_reactions.txt,51,Original Komuro mechanism; see air_chemistry_provenance.json
+R038,e + N2 -> e + e + N2+,electron,C26,,m,air_chemistry_Komuro_reactions.txt,52,Original Komuro mechanism; see air_chemistry_provenance.json
+R039,e + O2 -> e + e + O2+,electron,C43,,m,air_chemistry_Komuro_reactions.txt,53,Original Komuro mechanism; see air_chemistry_provenance.json
+R040,e + O2 + O2 -> O2- + O2,electron,C27,,m,air_chemistry_Komuro_reactions.txt,55,Original Komuro mechanism; see air_chemistry_provenance.json
+R041,e + O2 -> O- + O(^3P),electron,C28,,m,air_chemistry_Komuro_reactions.txt,56,Original Komuro mechanism; see air_chemistry_provenance.json
+R042,O2- + O2 -> 2O2 + e,analytic,c1*(Tg/300)**c2*exp(-c3/Tg),2.7e-10 0.5 5590.0,cm,air_chemistry_Komuro_reactions.txt,58,Original Komuro mechanism; see air_chemistry_provenance.json
+R043,O2- + N2 -> O2 + N2 + e,analytic,c1*(Tg/300)**c2*exp(-c3/Tg),1.9e-12 0.5 4990.0,cm,air_chemistry_Komuro_reactions.txt,59,Original Komuro mechanism; see air_chemistry_provenance.json
+R044,O- + O2 -> O2- + O(^3P),analytic,c1*exp(-(c2/(c3+Td))**c4),6.96e-11 198.0 5.6 2.0,cm,air_chemistry_Komuro_reactions.txt,61,Original Komuro mechanism; see air_chemistry_provenance.json
+R045,O- + O2 + M -> O3- + M,analytic,c1*exp(-(Td/c2)**c3),1.1e-30 65.0 2.0,cm,air_chemistry_Komuro_reactions.txt,62,Original Komuro mechanism; see air_chemistry_provenance.json
+R046,N4+ + N2 -> N2+ + 2N2,analytic,10**(c1+c2*(Tg-300)),-14.6 0.0036,cm,air_chemistry_Komuro_reactions.txt,64,Original Komuro mechanism; see air_chemistry_provenance.json
+R047,N4+ + O2 -> O2+ + 2N2,analytic,c1,2.5e-10,cm,air_chemistry_Komuro_reactions.txt,65,Original Komuro mechanism; see air_chemistry_provenance.json
+R048,O4+ + N2 -> N2O2+ + O2,analytic,c1*(Tg/300)**c2*exp(-c3/Tg),4.61e-12 2.5 2650.0,cm,air_chemistry_Komuro_reactions.txt,66,Original Komuro mechanism; see air_chemistry_provenance.json
+R049,O4+ + O2 -> O2+ + 2O2,analytic,c1*(300/Tg)**c2*exp(-c3/Tg),3.3e-06 4.0 5030.0,cm,air_chemistry_Komuro_reactions.txt,67,Original Komuro mechanism; see air_chemistry_provenance.json
+R050,O4+ + O2*(a) -> O2+ + 2O2,analytic,c1,1e-10,cm,air_chemistry_Komuro_reactions.txt,68,Original Komuro mechanism; see air_chemistry_provenance.json
+R051,O4+ + O2*(b) -> O2+ + 2O2,analytic,c1,1e-10,cm,air_chemistry_Komuro_reactions.txt,69,Original Komuro mechanism; see air_chemistry_provenance.json
+R052,O4+ + O(^3P) -> O2+ + O3,analytic,c1,3e-10,cm,air_chemistry_Komuro_reactions.txt,70,Original Komuro mechanism; see air_chemistry_provenance.json
+R053,O4+ + O(^1D) -> O2+ + O3,analytic,c1,3e-10,cm,air_chemistry_Komuro_reactions.txt,71,Original Komuro mechanism; see air_chemistry_provenance.json
+R054,O4+ + O(^1S) -> O2+ + O3,analytic,c1,3e-10,cm,air_chemistry_Komuro_reactions.txt,72,Original Komuro mechanism; see air_chemistry_provenance.json
+R055,N2O2+ + N2 -> O2+ + 2N2,analytic,c1*(Tg/300)**c2*exp(-c3/Tg),1.1e-06 -5.3 2357.0,cm,air_chemistry_Komuro_reactions.txt,73,Original Komuro mechanism; see air_chemistry_provenance.json
+R056,N2O2+ + O2 -> O4+ + N2,analytic,c1,1e-09,cm,air_chemistry_Komuro_reactions.txt,74,Original Komuro mechanism; see air_chemistry_provenance.json
+R057,N2+ + N2 + M -> N4+ + M,analytic,c1*(300/Tg)**c2,5.2e-29 2.2,cm,air_chemistry_Komuro_reactions.txt,75,Original Komuro mechanism; see air_chemistry_provenance.json
+R058,O2+ + O2 + M -> O4+ + M,analytic,c1*(300/Tg)**c2,2.4e-30 3.2,cm,air_chemistry_Komuro_reactions.txt,76,Original Komuro mechanism; see air_chemistry_provenance.json
+R059,O2+ + N2 + N2 -> N2O2+ + N2,analytic,c1*(300/Tg)**c2,9e-31 2.0,cm,air_chemistry_Komuro_reactions.txt,77,Original Komuro mechanism; see air_chemistry_provenance.json
+R060,N2+ + e -> N(^4S) + N(^4S),analytic,c1*(300/Te)**c2,1.8e-07 0.39,cm,air_chemistry_Komuro_reactions.txt,79,Original Komuro mechanism; see air_chemistry_provenance.json
+R061,O2+ + e -> O(^3P) + O(^3P),analytic,c1*(300/Te)**c2,2.4e-07 0.7,cm,air_chemistry_Komuro_reactions.txt,80,Original Komuro mechanism; see air_chemistry_provenance.json
+R062,N4+ + e -> 2N2,analytic,c1*(300/Te)**c2,2e-06 0.5,cm,air_chemistry_Komuro_reactions.txt,81,Original Komuro mechanism; see air_chemistry_provenance.json
+R063,O4+ + e -> 2O2,analytic,c1*(300/Te)**c2,1.4e-06 0.5,cm,air_chemistry_Komuro_reactions.txt,82,Original Komuro mechanism; see air_chemistry_provenance.json
+R064,N2O2+ + e -> N2 + O2,analytic,c1*(300/Te)**c2,1.3e-06 0.5,cm,air_chemistry_Komuro_reactions.txt,83,Original Komuro mechanism; see air_chemistry_provenance.json
+R065,N2+ + e -> N2,analytic,c1,4e-12,cm,air_chemistry_Komuro_reactions.txt,84,Original Komuro mechanism; see air_chemistry_provenance.json
+R066,O2+ + e -> O2,analytic,c1,4e-12,cm,air_chemistry_Komuro_reactions.txt,85,Original Komuro mechanism; see air_chemistry_provenance.json
+R067,N2+ + O- -> N2 + O(^3P),analytic,c1,4e-07,cm,air_chemistry_Komuro_reactions.txt,87,Original Komuro mechanism; see air_chemistry_provenance.json
+R068,N2+ + O2- -> N2 + O2,analytic,c1,1.6e-07,cm,air_chemistry_Komuro_reactions.txt,88,Original Komuro mechanism; see air_chemistry_provenance.json
+R069,O2+ + O- -> O2 + O(^3P),analytic,c1,9.6e-08,cm,air_chemistry_Komuro_reactions.txt,89,Original Komuro mechanism; see air_chemistry_provenance.json
+R070,O2+ + O2- -> 2O2,analytic,c1,4.2e-07,cm,air_chemistry_Komuro_reactions.txt,90,Original Komuro mechanism; see air_chemistry_provenance.json
+R071,O2- + O2+ + O2 -> 2O(^3P) + 2O2,analytic,c1*(300/Tg)**c2,2e-25 2.5,cm,air_chemistry_Komuro_reactions.txt,91,Original Komuro mechanism; see air_chemistry_provenance.json
+R072,O2- + O4+ + O2 -> 2O(^3P) + 3O2,analytic,c1*(300/Tg)**c2,2e-25 2.5,cm,air_chemistry_Komuro_reactions.txt,92,Original Komuro mechanism; see air_chemistry_provenance.json
+R073,N2*(A1) + O2 -> N2 + O(^3P) + O(^3P),analytic,c1,1.7e-12,cm,air_chemistry_Komuro_reactions.txt,94,Original Komuro mechanism; see air_chemistry_provenance.json
+R074,N2*(A1) + O2 -> N2 + O2*(b),analytic,c1,7.5e-13,cm,air_chemistry_Komuro_reactions.txt,95,Original Komuro mechanism; see air_chemistry_provenance.json
+R075,N2*(A1) + N2*(A1) -> N2 + N2*(E),analytic,c1,1e-11,cm,air_chemistry_Komuro_reactions.txt,96,Original Komuro mechanism; see air_chemistry_provenance.json
+R076,N2*(A1) + N2*(A1) -> N2 + N2*(B),analytic,c1,7.7e-11,cm,air_chemistry_Komuro_reactions.txt,97,Original Komuro mechanism; see air_chemistry_provenance.json
+R077,N2*(A1) + N2*(A1) -> N2 + N2*(C),analytic,c1,1.6e-10,cm,air_chemistry_Komuro_reactions.txt,98,Original Komuro mechanism; see air_chemistry_provenance.json
+R078,N2*(A1) + O(^3P) -> N2 + O(^1S),analytic,c1,3e-11,cm,air_chemistry_Komuro_reactions.txt,99,Original Komuro mechanism; see air_chemistry_provenance.json
+R079,N2*(A1) + O(^3P) -> NO + N(^2D),analytic,c1,7e-12,cm,air_chemistry_Komuro_reactions.txt,100,Original Komuro mechanism; see air_chemistry_provenance.json
+R080,N2*(A1) + O(^3P) -> N2 + O(^3P),analytic,c1,2e-11,cm,air_chemistry_Komuro_reactions.txt,101,Original Komuro mechanism; see air_chemistry_provenance.json
+R081,N2*(A1) + NO -> N2 + NO(A),analytic,c1,6.9e-11,cm,air_chemistry_Komuro_reactions.txt,102,Original Komuro mechanism; see air_chemistry_provenance.json
+R082,N2*(A2) + N2 -> N2*(A1) + N2,analytic,c1,1e-11,cm,air_chemistry_Komuro_reactions.txt,103,Original Komuro mechanism; see air_chemistry_provenance.json
+R083,N2*(A2) + O(^3P) -> N2 + O(^3P),analytic,c1,2e-11,cm,air_chemistry_Komuro_reactions.txt,104,Original Komuro mechanism; see air_chemistry_provenance.json
+R084,N2*(A2) + NO -> N2 + NO(A),analytic,c1,6.9e-11,cm,air_chemistry_Komuro_reactions.txt,105,Original Komuro mechanism; see air_chemistry_provenance.json
+R085,N2*(A2) + O(^3P) -> NO + N(^4S),analytic,c1,7e-12,cm,air_chemistry_Komuro_reactions.txt,106,Original Komuro mechanism; see air_chemistry_provenance.json
+R086,N2*(B) + O2 -> N2 + O(^3P) + O(^3P),analytic,c1,3e-10,cm,air_chemistry_Komuro_reactions.txt,107,Original Komuro mechanism; see air_chemistry_provenance.json
+R087,N2*(B) + N2 -> N2*(A1) + N2,analytic,c1,1e-11,cm,air_chemistry_Komuro_reactions.txt,108,Original Komuro mechanism; see air_chemistry_provenance.json
+R088,N2*(B) -> N2*(A1),analytic,c1,1.1e5,m,air_chemistry_Komuro_reactions.txt,109,Original Komuro mechanism; see air_chemistry_provenance.json
+R089,N2*(a) + O2 -> N2 + O(^3P) + O(^1D),analytic,c1,2.8e-11,cm,air_chemistry_Komuro_reactions.txt,110,Original Komuro mechanism; see air_chemistry_provenance.json
+R090,N2*(a) + N2 -> N2*(B) + N2,analytic,c1,2e-13,cm,air_chemistry_Komuro_reactions.txt,111,Original Komuro mechanism; see air_chemistry_provenance.json
+R091,N2*(a) + NO -> N2 + N(^4S) + O(^3P),analytic,c1,3.6e-10,cm,air_chemistry_Komuro_reactions.txt,112,Original Komuro mechanism; see air_chemistry_provenance.json
+R092,N2*(C) + O2 -> N2 + O(^3P) + O(^3P),analytic,c1,2.5e-10,cm,air_chemistry_Komuro_reactions.txt,113,Original Komuro mechanism; see air_chemistry_provenance.json
+R093,N2*(C) + N2 -> N2*(B) + N2,analytic,c1,1e-11,cm,air_chemistry_Komuro_reactions.txt,114,Original Komuro mechanism; see air_chemistry_provenance.json
+R094,N2*(C) + N2 -> N2*(a) + N2,analytic,c1,1e-11,cm,air_chemistry_Komuro_reactions.txt,115,Original Komuro mechanism; see air_chemistry_provenance.json
+R095,N2*(C) -> N2*(B),analytic,c1,2.8e7,m,air_chemistry_Komuro_reactions.txt,116,Original Komuro mechanism; see air_chemistry_provenance.json
+R096,N2*(E) + N2 -> N2*(C) + N2,analytic,c1,1e-11,cm,air_chemistry_Komuro_reactions.txt,117,Original Komuro mechanism; see air_chemistry_provenance.json
+R097,NO(A) -> NO,analytic,c1,5.1e6,m,air_chemistry_Komuro_reactions.txt,118,Original Komuro mechanism; see air_chemistry_provenance.json
+R098,NO(A) + O2 -> NO + O2,analytic,c1,1.62e-10,cm,air_chemistry_Komuro_reactions.txt,119,Original Komuro mechanism; see air_chemistry_provenance.json
+R099,N(^2D) + O2 -> NO + O(^1D),analytic,c1*exp(-c2/Tg),7.37e-12 185.0,cm,air_chemistry_Komuro_reactions.txt,120,Original Komuro mechanism; see air_chemistry_provenance.json
+R100,N(^2D) + O2 -> NO + O(^3P),analytic,c1*exp(-c2/Tg),2.52e-12 185.0,cm,air_chemistry_Komuro_reactions.txt,121,Original Komuro mechanism; see air_chemistry_provenance.json
+R101,N(^2D) + NO -> N2 + O(^3P),analytic,c1,1.8e-10,cm,air_chemistry_Komuro_reactions.txt,122,Original Komuro mechanism; see air_chemistry_provenance.json
+R102,N(^2D) + N2 -> N(^4S) + N2,analytic,c1,1.7e-14,cm,air_chemistry_Komuro_reactions.txt,123,Original Komuro mechanism; see air_chemistry_provenance.json
+R103,N(^2D) + O(^3P) -> N(^4S) + O(^3P),analytic,c1*exp(-c2/Tg),3.3e-12 260.0,cm,air_chemistry_Komuro_reactions.txt,124,Original Komuro mechanism; see air_chemistry_provenance.json
+R104,N(^4S) + NO -> N2 + O(^3P),analytic,c1*exp(-c2/Tg),3.51e-11 49.84,cm,air_chemistry_Komuro_reactions.txt,125,Original Komuro mechanism; see air_chemistry_provenance.json
+R105,N(^4S) + N(^4S) + N2 -> N2 + N2,analytic,c1*exp(-c2/Tg),1.38e-33 -502.9,cm,air_chemistry_Komuro_reactions.txt,126,Original Komuro mechanism; see air_chemistry_provenance.json
+R106,N(^4S) + NO2 -> NO + NO,analytic,c1,2.3e-12,cm,air_chemistry_Komuro_reactions.txt,127,Original Komuro mechanism; see air_chemistry_provenance.json
+R107,N(^4S) + NO2 -> O(^3P) + N2O,analytic,c1*exp(-c2/Tg),5.8e-12 -220.0,cm,air_chemistry_Komuro_reactions.txt,128,Original Komuro mechanism; see air_chemistry_provenance.json
+R108,N(^4S) + O2 -> NO + O(^3P),analytic,c1*Tg**c2*exp(-c3/Tg),9.7e-15 1.01 3120.0,cm,air_chemistry_Komuro_reactions.txt,129,Original Komuro mechanism; see air_chemistry_provenance.json
+R109,O2*(a) + N(^4S) -> O(^3P) + NO,analytic,c1,9e-17,cm,air_chemistry_Komuro_reactions.txt,130,Original Komuro mechanism; see air_chemistry_provenance.json
+R110,O2*(a) + O(^3P) -> O(^3P) + O2,analytic,c1,7e-16,cm,air_chemistry_Komuro_reactions.txt,131,Original Komuro mechanism; see air_chemistry_provenance.json
+R111,O2*(a) + O2 -> O2 + O2,analytic,c1*(Tg/c2)**c3,2.2e-18 300.0 0.8,cm,air_chemistry_Komuro_reactions.txt,132,Original Komuro mechanism; see air_chemistry_provenance.json
+R112,O2*(a) + N2 -> O2 + N2,analytic,c1,1.4e-19,cm,air_chemistry_Komuro_reactions.txt,133,Original Komuro mechanism; see air_chemistry_provenance.json
+R113,O2*(a) + NO -> NO + O2,analytic,c1,3.49e-17,cm,air_chemistry_Komuro_reactions.txt,134,Original Komuro mechanism; see air_chemistry_provenance.json
+R114,O2*(b) + N2 -> O2*(a) + N2,analytic,c1,2.1e-15,cm,air_chemistry_Komuro_reactions.txt,135,Original Komuro mechanism; see air_chemistry_provenance.json
+R115,O2*(b) + O2 -> O2*(a) + O2,analytic,c1,4.1e-17,cm,air_chemistry_Komuro_reactions.txt,136,Original Komuro mechanism; see air_chemistry_provenance.json
+R116,O2*(b) + O(^3P) -> O2 + O(^3P),analytic,c1,8e-14,cm,air_chemistry_Komuro_reactions.txt,137,Original Komuro mechanism; see air_chemistry_provenance.json
+R117,O2*(b) + O3 -> O2 + O2 + O(^3P),analytic,c1,1.8e-11,cm,air_chemistry_Komuro_reactions.txt,138,Original Komuro mechanism; see air_chemistry_provenance.json
+R118,O2*(b) + NO -> O2*(a) + NO,analytic,c1,4e-14,cm,air_chemistry_Komuro_reactions.txt,139,Original Komuro mechanism; see air_chemistry_provenance.json
+R119,O2*(A) + O2 -> O2*(b) + O2*(b),analytic,c1,2.9e-13,cm,air_chemistry_Komuro_reactions.txt,140,Original Komuro mechanism; see air_chemistry_provenance.json
+R120,O2*(A) + N2 -> O2*(b) + N2,analytic,c1,3e-13,cm,air_chemistry_Komuro_reactions.txt,141,Original Komuro mechanism; see air_chemistry_provenance.json
+R121,O2*(A) + O(^3P) -> O2*(b) + O(^1D),analytic,c1,9e-12,cm,air_chemistry_Komuro_reactions.txt,142,Original Komuro mechanism; see air_chemistry_provenance.json
+R122,O(^3P) + O2 + N2 -> O3 + N2,analytic,c1*(Tg/c2)**c3,5.6e-34 300.0 -2.6,cm,air_chemistry_Komuro_reactions.txt,143,Original Komuro mechanism; see air_chemistry_provenance.json
+R123,O(^3P) + O2 + O2 -> O3 + O2,analytic,c1*(Tg/c2)**c3,6e-34 300.0 -2.6,cm,air_chemistry_Komuro_reactions.txt,144,Original Komuro mechanism; see air_chemistry_provenance.json
+R124,O(^3P) + O(^3P) + N2 -> O2 + N2,analytic,c1*exp(-c2/Tg),9.46e-34 484.7,cm,air_chemistry_Komuro_reactions.txt,145,Original Komuro mechanism; see air_chemistry_provenance.json
+R125,O(^3P) + O(^3P) + O2 -> O2 + O2,analytic,c1,4.49e-33,cm,air_chemistry_Komuro_reactions.txt,146,Original Komuro mechanism; see air_chemistry_provenance.json
+R126,O(^3P) + N(^4S) + N2 -> NO + N2,analytic,c1*exp(-c2/Tg),6.89e-33 -134.7,cm,air_chemistry_Komuro_reactions.txt,147,Original Komuro mechanism; see air_chemistry_provenance.json
+R127,O(^3P) + NO + N2 -> NO2 + N2,analytic,c1*(Tg/300)**c2*exp(-c3/Tg),1.01e-30 -2.87 781.0,cm,air_chemistry_Komuro_reactions.txt,148,Original Komuro mechanism; see air_chemistry_provenance.json
+R128,O(^3P) + NO2 -> O2 + NO,analytic,c1*exp(-c2/Tg),5.5e-12 -188.0,cm,air_chemistry_Komuro_reactions.txt,149,Original Komuro mechanism; see air_chemistry_provenance.json
+R129,O(^1D) + O2 -> O(^3P) + O2,analytic,c1*exp(-c2/Tg),3.12e-11 -70.0,cm,air_chemistry_Komuro_reactions.txt,150,Original Komuro mechanism; see air_chemistry_provenance.json
+R130,O(^1D) + N2 -> O(^3P) + N2,analytic,c1*exp(-c2/Tg),2.1e-11 -115.0,cm,air_chemistry_Komuro_reactions.txt,151,Original Komuro mechanism; see air_chemistry_provenance.json
+R131,O3 + NO -> NO2 + O2,analytic,c1*exp(-c2/Tg),3.16e-12 1556.0,cm,air_chemistry_Komuro_reactions.txt,152,Original Komuro mechanism; see air_chemistry_provenance.json
+R132,O3 + O(^3P) -> O2 + O2,analytic,c1*exp(-c2/Tg),8e-12 2060.0,cm,air_chemistry_Komuro_reactions.txt,153,Original Komuro mechanism; see air_chemistry_provenance.json
+R133,O3 + O(^1D) -> O2 + 2O(^3P),analytic,c1,1.2e-10,cm,air_chemistry_Komuro_reactions.txt,154,Original Komuro mechanism; see air_chemistry_provenance.json
+R134,O3 + O3 -> O2 + O(^3P) + O3,analytic,c1*exp(-c2/Tg),7.16e-10 11200.0,cm,air_chemistry_Komuro_reactions.txt,155,Original Komuro mechanism; see air_chemistry_provenance.json

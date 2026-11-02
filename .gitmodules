@@ -1,0 +1,3 @@
+[submodule "Py3bolos"]
+	path = Py3bolos
+	url = https://github.com/keipero/Py3bolos

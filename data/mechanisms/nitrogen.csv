@@ -1,0 +1,97 @@
+id,equation,kind,value,parameters,length_unit,source_file,line,reference
+R001,E + N2 -> E + N2(V1),electron,N2->N2(V1RES),,m,../../samples/gases/nitrogen/kinet.inp,70,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R002,E + N2 -> E + N2(V1),electron,N2->N2(V1),,m,../../samples/gases/nitrogen/kinet.inp,71,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R003,E + N2 -> E + N2(V2),electron,N2->N2(V2),,m,../../samples/gases/nitrogen/kinet.inp,72,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R004,E + N2 -> E + N2(V3),electron,N2->N2(V3),,m,../../samples/gases/nitrogen/kinet.inp,73,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R005,E + N2 -> E + N2(V4),electron,N2->N2(V4),,m,../../samples/gases/nitrogen/kinet.inp,74,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R006,E + N2 -> E + N2(V5),electron,N2->N2(V5),,m,../../samples/gases/nitrogen/kinet.inp,75,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R007,E + N2 -> E + N2(V6),electron,N2->N2(V6),,m,../../samples/gases/nitrogen/kinet.inp,76,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R008,E + N2 -> E + N2(V7),electron,N2->N2(V7),,m,../../samples/gases/nitrogen/kinet.inp,77,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R009,E + N2 -> E + N2(V8),electron,N2->N2(V8),,m,../../samples/gases/nitrogen/kinet.inp,78,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R010,E + N2 -> E + N2(A3),electron,"N2->N2(A3,V0-4)",,m,../../samples/gases/nitrogen/kinet.inp,81,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R011,E + N2 -> E + N2(A3),electron,"N2->N2(A3,V5-9)",,m,../../samples/gases/nitrogen/kinet.inp,82,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R012,E + N2 -> E + N2(A3),electron,"N2->N2(A3,V10-)",,m,../../samples/gases/nitrogen/kinet.inp,83,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R013,E + N2 -> E + N2(B3),electron,N2->N2(B3),,m,../../samples/gases/nitrogen/kinet.inp,84,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R014,E + N2 -> E + N2(B3),electron,N2->N2(W3),,m,../../samples/gases/nitrogen/kinet.inp,85,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R015,E + N2 -> E + N2(B3),electron,N2->N2(B'3),,m,../../samples/gases/nitrogen/kinet.inp,86,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R016,E + N2 -> E + N2(A1L),electron,N2->N2(A'1),,m,../../samples/gases/nitrogen/kinet.inp,87,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R017,E + N2 -> E + N2(A1L),electron,N2->N2(A1),,m,../../samples/gases/nitrogen/kinet.inp,88,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R018,E + N2 -> E + N2(A1L),electron,N2->N2(W1),,m,../../samples/gases/nitrogen/kinet.inp,89,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R019,E + N2 -> E + N2(C3),electron,N2->N2(C3),,m,../../samples/gases/nitrogen/kinet.inp,90,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R020,E + N2 -> E + N2(C3),electron,N2->N2(E3),,m,../../samples/gases/nitrogen/kinet.inp,91,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R021,E + N2 -> E + N2(C3),electron,N2->N2(A''1),,m,../../samples/gases/nitrogen/kinet.inp,92,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R022,E + N2 -> E + N + N(2D),electron,N2->N2(SUM),,m,../../samples/gases/nitrogen/kinet.inp,95,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R023,E + N2 -> E + E + N2^+,electron,N2->N2^+,,m,../../samples/gases/nitrogen/kinet.inp,98,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R024,E + N2^+ -> N + N,expression,9.0d-8*(300.d0/Te)**0.39d0,,cm,../../samples/gases/nitrogen/kinet.inp,102,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R025,E + N2^+ -> N + N(2D),expression,8.1d-8*(300.d0/Te)**0.39d0,,cm,../../samples/gases/nitrogen/kinet.inp,103,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R026,E + N2^+ -> N + N(2P),expression,9.0d-9*(300.d0/Te)**0.39d0,,cm,../../samples/gases/nitrogen/kinet.inp,104,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R027,E + N3^+ -> N2 + N,expression,2.0d-7*(300.d0/Te)**0.5d0,,cm,../../samples/gases/nitrogen/kinet.inp,105,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R028,E + N4^+ -> N2 + N2,expression,2.3d-6*(300.d0/Te)**0.53d0,,cm,../../samples/gases/nitrogen/kinet.inp,106,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R029,E + N^+ + E -> N + E,expression,7.d-20*(300.d0/Te)**4.5d0,,cm,../../samples/gases/nitrogen/kinet.inp,107,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R030,E + N^+ + ANY_NEUTRAL -> N + ANY_NEUTRAL,expression,6.d-27*(300.d0/Te)**1.5d0,,cm,../../samples/gases/nitrogen/kinet.inp,108,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R031,N2^+ + N -> N^+ + N2,expression,7.2d-13*(TeffN2/300.d0),,cm,../../samples/gases/nitrogen/kinet.inp,111,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R032,N3^+ + N -> N2^+ + N2,expression,6.6d-11,,cm,../../samples/gases/nitrogen/kinet.inp,112,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R033,N4^+ + N -> N^+ + N2 + N2,expression,1.d-11,,cm,../../samples/gases/nitrogen/kinet.inp,113,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R034,N4^+ + N2 -> N2^+ + N2 + N2,expression,"2.1d-16*exp(min(TeffN4/121.d0,log(1.d-10/2.1d-16)))",,cm,../../samples/gases/nitrogen/kinet.inp,114,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R035,N^+ + N2 + N2 -> N3^+ + N2,expression,1.7d-29*(300.d0/TeffN)**2.1d0,,cm,../../samples/gases/nitrogen/kinet.inp,115,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R036,N^+ + N + ANY_NEUTRAL -> N2^+ + ANY_NEUTRAL,expression,1.d-29,,cm,../../samples/gases/nitrogen/kinet.inp,116,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R037,N2^+ + N2 + N2 -> N4^+ + N2,expression,5.2d-29*(300.d0/TeffN2)**2.2d0,,cm,../../samples/gases/nitrogen/kinet.inp,117,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R038,N2^+ + N + N2 -> N3^+ + N2,expression,9.d-30*exp(400.d0/TeffN2),,cm,../../samples/gases/nitrogen/kinet.inp,118,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R039,N2(A3) -> N2,expression,0.5d0,,cm,../../samples/gases/nitrogen/kinet.inp,121,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R040,N2(B3) -> N2(A3),expression,1.34d5,,cm,../../samples/gases/nitrogen/kinet.inp,122,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R041,N2(A1L) -> N2,expression,1.d2,,cm,../../samples/gases/nitrogen/kinet.inp,123,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R042,N2(C3) -> N2(B3),expression,2.45d7,,cm,../../samples/gases/nitrogen/kinet.inp,124,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R043,N2(A3) + N -> N2 + N,expression,2.d-12,,cm,../../samples/gases/nitrogen/kinet.inp,125,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R044,N2(A3) + N -> N2 + N(2P),expression,4.d-11*(300.d0/Tgas)**0.667d0,,cm,../../samples/gases/nitrogen/kinet.inp,126,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R045,N2(A3) + N2 -> N2 + N2,expression,3.d-16,,cm,../../samples/gases/nitrogen/kinet.inp,127,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R046,N2(A3) + N2(A3) -> N2 + N2(B3),expression,3.d-10,,cm,../../samples/gases/nitrogen/kinet.inp,128,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R047,N2(A3) + N2(A3) -> N2 + N2(C3),expression,1.5d-10,,cm,../../samples/gases/nitrogen/kinet.inp,129,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R048,N2(B3) + N2 -> N2(A3) + N2,expression,3.d-11,,cm,../../samples/gases/nitrogen/kinet.inp,130,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R049,N2(B3) + N2 -> N2 + N2,expression,2.d-12,,cm,../../samples/gases/nitrogen/kinet.inp,131,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R050,N2(C3) + N2 -> N2(A1L) + N2,expression,1.d-11,,cm,../../samples/gases/nitrogen/kinet.inp,132,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R051,N2(A1L) + N2 -> N2(B3) + N2,expression,1.9d-13,,cm,../../samples/gases/nitrogen/kinet.inp,133,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R052,N2(A1L) + N2(A3) -> N4^+ + E,expression,4.d-12,,cm,../../samples/gases/nitrogen/kinet.inp,134,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R053,N2(A1L) + N2(A1L) -> N4^+ + E,expression,1.d-11,,cm,../../samples/gases/nitrogen/kinet.inp,135,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R054,N(2D) + N2 -> N + N2,expression,1.d-13*exp(-510.d0/Tgas),,cm,../../samples/gases/nitrogen/kinet.inp,138,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R055,N(2P) + N -> N + N,expression,1.8d-12,,cm,../../samples/gases/nitrogen/kinet.inp,139,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R056,N(2P) + N -> N(2D) + N,expression,6.d-13,,cm,../../samples/gases/nitrogen/kinet.inp,140,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R057,N(2P) + N2 -> N + N2,expression,6.d-14,,cm,../../samples/gases/nitrogen/kinet.inp,141,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R058,N(2P) + N(2D) -> N2^+ + E,expression,1.d-13,,cm,../../samples/gases/nitrogen/kinet.inp,142,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R059,N + N + N2 -> N2(A3) + N2,expression,1.7d-33,,cm,../../samples/gases/nitrogen/kinet.inp,145,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R060,N + N + N2 -> N2(B3) + N2,expression,2.4d-33,,cm,../../samples/gases/nitrogen/kinet.inp,146,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R061,N + N + N -> N2(A3) + N,expression,1.d-32,,cm,../../samples/gases/nitrogen/kinet.inp,147,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R062,N + N + N -> N2(B3) + N,expression,1.4d-32,,cm,../../samples/gases/nitrogen/kinet.inp,148,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R063,N + N + N2 -> N2 + N2,expression,"max(8.3d-34*exp(500.d0/Tgas),1.91d-33)",,cm,../../samples/gases/nitrogen/kinet.inp,149,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R064,N + N + N -> N2 + N,expression,5.4d-33*exp(435.d0/Tgas),,cm,../../samples/gases/nitrogen/kinet.inp,150,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R065,N2(V1) + N2 -> N2 + N2,expression,kVT10_N2N2*1.d0,,cm,../../samples/gases/nitrogen/kinet.inp,153,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R066,N2 + N2 -> N2(V1) + N2,expression,kVT01_N2N2*1.d0,,cm,../../samples/gases/nitrogen/kinet.inp,154,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R067,N2(V2) + N2 -> N2(V1) + N2,expression,kVT10_N2N2*2.d0,,cm,../../samples/gases/nitrogen/kinet.inp,155,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R068,N2(V1) + N2 -> N2(V2) + N2,expression,kVT01_N2N2*2.d0,,cm,../../samples/gases/nitrogen/kinet.inp,156,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R069,N2(V3) + N2 -> N2(V2) + N2,expression,kVT10_N2N2*3.d0,,cm,../../samples/gases/nitrogen/kinet.inp,157,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R070,N2(V2) + N2 -> N2(V3) + N2,expression,kVT01_N2N2*3.d0,,cm,../../samples/gases/nitrogen/kinet.inp,158,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R071,N2(V4) + N2 -> N2(V3) + N2,expression,kVT10_N2N2*4.d0,,cm,../../samples/gases/nitrogen/kinet.inp,159,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R072,N2(V3) + N2 -> N2(V4) + N2,expression,kVT01_N2N2*4.d0,,cm,../../samples/gases/nitrogen/kinet.inp,160,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R073,N2(V5) + N2 -> N2(V4) + N2,expression,kVT10_N2N2*5.d0,,cm,../../samples/gases/nitrogen/kinet.inp,161,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R074,N2(V4) + N2 -> N2(V5) + N2,expression,kVT01_N2N2*5.d0,,cm,../../samples/gases/nitrogen/kinet.inp,162,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R075,N2(V6) + N2 -> N2(V5) + N2,expression,kVT10_N2N2*6.d0,,cm,../../samples/gases/nitrogen/kinet.inp,163,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R076,N2(V5) + N2 -> N2(V6) + N2,expression,kVT01_N2N2*6.d0,,cm,../../samples/gases/nitrogen/kinet.inp,164,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R077,N2(V7) + N2 -> N2(V6) + N2,expression,kVT10_N2N2*7.d0,,cm,../../samples/gases/nitrogen/kinet.inp,165,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R078,N2(V6) + N2 -> N2(V7) + N2,expression,kVT01_N2N2*7.d0,,cm,../../samples/gases/nitrogen/kinet.inp,166,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R079,N2(V8) + N2 -> N2(V7) + N2,expression,kVT10_N2N2*8.d0,,cm,../../samples/gases/nitrogen/kinet.inp,167,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R080,N2(V7) + N2 -> N2(V8) + N2,expression,kVT01_N2N2*8.d0,,cm,../../samples/gases/nitrogen/kinet.inp,168,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R081,N2(V1) + N -> N2 + N,expression,kVT10_N2N*1.d0,,cm,../../samples/gases/nitrogen/kinet.inp,169,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R082,N2 + N -> N2(V1) + N,expression,kVT01_N2N*1.d0,,cm,../../samples/gases/nitrogen/kinet.inp,170,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R083,N2(V2) + N -> N2(V1) + N,expression,kVT10_N2N*2.d0,,cm,../../samples/gases/nitrogen/kinet.inp,171,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R084,N2(V1) + N -> N2(V2) + N,expression,kVT01_N2N*2.d0,,cm,../../samples/gases/nitrogen/kinet.inp,172,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R085,N2(V3) + N -> N2(V2) + N,expression,kVT10_N2N*3.d0,,cm,../../samples/gases/nitrogen/kinet.inp,173,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R086,N2(V2) + N -> N2(V3) + N,expression,kVT01_N2N*3.d0,,cm,../../samples/gases/nitrogen/kinet.inp,174,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R087,N2(V4) + N -> N2(V3) + N,expression,kVT10_N2N*4.d0,,cm,../../samples/gases/nitrogen/kinet.inp,175,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R088,N2(V3) + N -> N2(V4) + N,expression,kVT01_N2N*4.d0,,cm,../../samples/gases/nitrogen/kinet.inp,176,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R089,N2(V5) + N -> N2(V4) + N,expression,kVT10_N2N*5.d0,,cm,../../samples/gases/nitrogen/kinet.inp,177,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R090,N2(V4) + N -> N2(V5) + N,expression,kVT01_N2N*5.d0,,cm,../../samples/gases/nitrogen/kinet.inp,178,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R091,N2(V6) + N -> N2(V5) + N,expression,kVT10_N2N*6.d0,,cm,../../samples/gases/nitrogen/kinet.inp,179,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R092,N2(V5) + N -> N2(V6) + N,expression,kVT01_N2N*6.d0,,cm,../../samples/gases/nitrogen/kinet.inp,180,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R093,N2(V7) + N -> N2(V6) + N,expression,kVT10_N2N*7.d0,,cm,../../samples/gases/nitrogen/kinet.inp,181,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R094,N2(V6) + N -> N2(V7) + N,expression,kVT01_N2N*7.d0,,cm,../../samples/gases/nitrogen/kinet.inp,182,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R095,N2(V8) + N -> N2(V7) + N,expression,kVT10_N2N*8.d0,,cm,../../samples/gases/nitrogen/kinet.inp,183,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json
+R096,N2(V7) + N -> N2(V8) + N,expression,kVT01_N2N*8.d0,,cm,../../samples/gases/nitrogen/kinet.inp,184,Unmodified nitrogen sample; see samples/gases/nitrogen/provenance.json

@@ -1,0 +1,20 @@
+{
+  "conditions": {
+    "temperature_k": 301.0,
+    "field_td": 51.0,
+    "pressure_pa": 103893.83725000001,
+    "seed_density": 1.0,
+    "end_time_s": 3e-07
+  },
+  "target": "Ar",
+  "counts": [
+    3,
+    2
+  ],
+  "initial_densities_cm3": {
+    "E": 1.0,
+    "AR": 2.5e+19,
+    "AR^+": 1.0
+  },
+  "output_intervals": 30
+}

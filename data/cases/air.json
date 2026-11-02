@@ -1,0 +1,773 @@
+{
+  "schema_version": 1,
+  "name": "air",
+  "mechanism": {
+    "schema_version": 1,
+    "species": [
+      {
+        "name": "e",
+        "composition": {},
+        "charge": -1,
+        "electron": true
+      },
+      {
+        "name": "N2",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": false
+      },
+      {
+        "name": "O2",
+        "composition": {
+          "O": 2
+        },
+        "charge": 0,
+        "excited": false
+      },
+      {
+        "name": "N(^2D)",
+        "composition": {
+          "N": 1
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N(^4S)",
+        "composition": {
+          "N": 1
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2*(A1)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2*(A2)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2*(B)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2*(C)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2*(E)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2*(J)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2*(a)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2*(v1)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2*(v2)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2*(v3)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2*(v4)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2*(v5)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2*(v6)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2*(v7)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2*(v8)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2+",
+        "composition": {
+          "N": 2
+        },
+        "charge": 1,
+        "excited": false
+      },
+      {
+        "name": "N2O",
+        "composition": {
+          "N": 2,
+          "O": 1
+        },
+        "charge": 0,
+        "excited": false
+      },
+      {
+        "name": "N2O2+",
+        "composition": {
+          "N": 2,
+          "O": 2
+        },
+        "charge": 1,
+        "excited": false
+      },
+      {
+        "name": "N4+",
+        "composition": {
+          "N": 4
+        },
+        "charge": 1,
+        "excited": false
+      },
+      {
+        "name": "NO",
+        "composition": {
+          "N": 1,
+          "O": 1
+        },
+        "charge": 0,
+        "excited": false
+      },
+      {
+        "name": "NO(A)",
+        "composition": {
+          "N": 1,
+          "O": 1
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "NO2",
+        "composition": {
+          "N": 1,
+          "O": 2
+        },
+        "charge": 0,
+        "excited": false
+      },
+      {
+        "name": "O(^1D)",
+        "composition": {
+          "O": 1
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "O(^1S)",
+        "composition": {
+          "O": 1
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "O(^3P)",
+        "composition": {
+          "O": 1
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "O-",
+        "composition": {
+          "O": 1
+        },
+        "charge": -1,
+        "excited": false
+      },
+      {
+        "name": "O2*(A)",
+        "composition": {
+          "O": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "O2*(J)",
+        "composition": {
+          "O": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "O2*(a)",
+        "composition": {
+          "O": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "O2*(b)",
+        "composition": {
+          "O": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "O2*(v1)",
+        "composition": {
+          "O": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "O2*(v2)",
+        "composition": {
+          "O": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "O2*(v3)",
+        "composition": {
+          "O": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "O2*(v4)",
+        "composition": {
+          "O": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "O2+",
+        "composition": {
+          "O": 2
+        },
+        "charge": 1,
+        "excited": false
+      },
+      {
+        "name": "O2-",
+        "composition": {
+          "O": 2
+        },
+        "charge": -1,
+        "excited": false
+      },
+      {
+        "name": "O3",
+        "composition": {
+          "O": 3
+        },
+        "charge": 0,
+        "excited": false
+      },
+      {
+        "name": "O3-",
+        "composition": {
+          "O": 3
+        },
+        "charge": -1,
+        "excited": false
+      },
+      {
+        "name": "O4+",
+        "composition": {
+          "O": 4
+        },
+        "charge": 1,
+        "excited": false
+      }
+    ],
+    "reactions": "../mechanisms/air.csv",
+    "third_bodies": {
+      "M": {
+        "N2": 1.0,
+        "O2": 1.0
+      }
+    },
+    "variables": [],
+    "source_sha256": {
+      "../mechanisms/air_chemistry_Komuro_reactions.txt": "404ffb511b855302c9f99ac2e12a655fd6846b8c9a16812b932089b72289c66c"
+    }
+  },
+  "gas": {
+    "temperature_K": 300.0,
+    "pressure_Pa": 101325.0,
+    "mole_fractions": {
+      "N2": 0.8,
+      "O2": 0.2
+    }
+  },
+  "initial_densities_m3": {
+    "e": 1000000000000.0,
+    "N2": 1.957050633433907e+25,
+    "O2": 4.892626583584765e+24,
+    "N2+": 800000000000.0001,
+    "O2+": 199999999999.99994
+  },
+  "field": {
+    "td": 100.0,
+    "duration_ns": null
+  },
+  "electrons": {
+    "profile": {
+      "cross_sections": [
+        "../cross_sections/Phelps_N2-O2_20261026.txt"
+      ],
+      "targets": {
+        "N2": "N2",
+        "O2": "O2"
+      },
+      "channels": [
+        {
+          "id": "C1",
+          "target": "N2",
+          "kind": "EFFECTIVE",
+          "product": null,
+          "threshold_eV": 0.0,
+          "label": "N2 Effective (momentum)"
+        },
+        {
+          "id": "C2",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(rot)",
+          "threshold_eV": 0.02,
+          "label": "N2 Excitation 0.020 eV"
+        },
+        {
+          "id": "C3",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(v1)",
+          "threshold_eV": 0.29,
+          "label": "N2 Excitation 0.29 eV"
+        },
+        {
+          "id": "C4",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(v1res)",
+          "threshold_eV": 0.291,
+          "label": "N2 Excitation 0.29 eV"
+        },
+        {
+          "id": "C5",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(v2)",
+          "threshold_eV": 0.59,
+          "label": "N2 Excitation 0.59 eV"
+        },
+        {
+          "id": "C6",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(v3)",
+          "threshold_eV": 0.88,
+          "label": "N2 Excitation 0.88 eV"
+        },
+        {
+          "id": "C7",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(v4)",
+          "threshold_eV": 1.17,
+          "label": "N2 Excitation 1.17 eV"
+        },
+        {
+          "id": "C8",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(v5)",
+          "threshold_eV": 1.47,
+          "label": "N2 Excitation 1.47 eV"
+        },
+        {
+          "id": "C9",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(v6)",
+          "threshold_eV": 1.76,
+          "label": "N2 Excitation 1.76 eV"
+        },
+        {
+          "id": "C10",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(v7)",
+          "threshold_eV": 2.06,
+          "label": "N2 Excitation 2.06 eV"
+        },
+        {
+          "id": "C11",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(v8)",
+          "threshold_eV": 2.35,
+          "label": "N2 Excitation 2.35 eV"
+        },
+        {
+          "id": "C12",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(A3,v0-4)",
+          "threshold_eV": 6.17,
+          "label": "N2 Excitation 6.17 eV"
+        },
+        {
+          "id": "C13",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(A3,v5-9)",
+          "threshold_eV": 7.0,
+          "label": "N2 Excitation 7.00 eV"
+        },
+        {
+          "id": "C14",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(B3)",
+          "threshold_eV": 7.35,
+          "label": "N2 Excitation 7.35 eV"
+        },
+        {
+          "id": "C15",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(W3)",
+          "threshold_eV": 7.36,
+          "label": "N2 Excitation 7.36 eV"
+        },
+        {
+          "id": "C16",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(A3,v10-)",
+          "threshold_eV": 7.8,
+          "label": "N2 Excitation 7.80 eV"
+        },
+        {
+          "id": "C17",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(B'3)",
+          "threshold_eV": 8.16,
+          "label": "N2 Excitation 8.16 eV"
+        },
+        {
+          "id": "C18",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(a'1)",
+          "threshold_eV": 8.4,
+          "label": "N2 Excitation 8.40 eV"
+        },
+        {
+          "id": "C19",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(a1)",
+          "threshold_eV": 8.55,
+          "label": "N2 Excitation 8.55 eV"
+        },
+        {
+          "id": "C20",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(w1)",
+          "threshold_eV": 8.89,
+          "label": "N2 Excitation 8.89 eV"
+        },
+        {
+          "id": "C21",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(C3)",
+          "threshold_eV": 11.03,
+          "label": "N2 Excitation 11.03 eV"
+        },
+        {
+          "id": "C22",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(E3)",
+          "threshold_eV": 11.87,
+          "label": "N2 Excitation 11.87 eV"
+        },
+        {
+          "id": "C23",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(a''1)",
+          "threshold_eV": 12.25,
+          "label": "N2 Excitation 12.25 eV"
+        },
+        {
+          "id": "C24",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(SUM)",
+          "threshold_eV": 13.0,
+          "label": "N2 Excitation 13.00 eV"
+        },
+        {
+          "id": "C25",
+          "target": "N2",
+          "kind": "IONIZATION",
+          "product": "N2^+",
+          "threshold_eV": 15.6,
+          "label": "N2 Ionization 15.60 eV"
+        },
+        {
+          "id": "C26",
+          "target": "N2",
+          "kind": "IONIZATION",
+          "product": "N2^+(B2SIGMA)",
+          "threshold_eV": 18.8,
+          "label": "N2 Ionization 18.80 eV"
+        },
+        {
+          "id": "C27",
+          "target": "O2",
+          "kind": "ATTACHMENT",
+          "product": null,
+          "threshold_eV": 0.0,
+          "label": "O2 Attachment",
+          "density_normalization": {
+            "species": "O2",
+            "power": 1,
+            "density_unit": "cm^-3",
+            "coefficient_scale": 1e-06,
+            "virtual_target": "__O2_three_body__"
+          }
+        },
+        {
+          "id": "C28",
+          "target": "O2",
+          "kind": "ATTACHMENT",
+          "product": "O^-+O",
+          "threshold_eV": 0.0,
+          "label": "O2 Attachment"
+        },
+        {
+          "id": "C29",
+          "target": "O2",
+          "kind": "EFFECTIVE",
+          "product": null,
+          "threshold_eV": 0.0,
+          "label": "O2 Effective (momentum)"
+        },
+        {
+          "id": "C30",
+          "target": "O2",
+          "kind": "EXCITATION",
+          "product": "O2(rot)",
+          "threshold_eV": 0.02,
+          "label": "O2 Excitation 0.020 eV"
+        },
+        {
+          "id": "C31",
+          "target": "O2",
+          "kind": "EXCITATION",
+          "product": "O2(v1)",
+          "threshold_eV": 0.19,
+          "label": "O2 Excitation 0.19 eV"
+        },
+        {
+          "id": "C32",
+          "target": "O2",
+          "kind": "EXCITATION",
+          "product": "O2(v1res)",
+          "threshold_eV": 0.19,
+          "label": "O2 Excitation 0.19 eV"
+        },
+        {
+          "id": "C33",
+          "target": "O2",
+          "kind": "EXCITATION",
+          "product": "O2(v2)",
+          "threshold_eV": 0.38,
+          "label": "O2 Excitation 0.38 eV"
+        },
+        {
+          "id": "C34",
+          "target": "O2",
+          "kind": "EXCITATION",
+          "product": "O2(v2res)",
+          "threshold_eV": 0.38,
+          "label": "O2 Excitation 0.38 eV"
+        },
+        {
+          "id": "C35",
+          "target": "O2",
+          "kind": "EXCITATION",
+          "product": "O2(v3)",
+          "threshold_eV": 0.57,
+          "label": "O2 Excitation 0.57 eV"
+        },
+        {
+          "id": "C36",
+          "target": "O2",
+          "kind": "EXCITATION",
+          "product": "O2(v4)",
+          "threshold_eV": 0.75,
+          "label": "O2 Excitation 0.75 eV"
+        },
+        {
+          "id": "C37",
+          "target": "O2",
+          "kind": "EXCITATION",
+          "product": "O2(a1)",
+          "threshold_eV": 0.977,
+          "label": "O2 Excitation 0.98 eV"
+        },
+        {
+          "id": "C38",
+          "target": "O2",
+          "kind": "EXCITATION",
+          "product": "O2(b1)",
+          "threshold_eV": 1.627,
+          "label": "O2 Excitation 1.63 eV"
+        },
+        {
+          "id": "C39",
+          "target": "O2",
+          "kind": "EXCITATION",
+          "product": "O2(4.5eV)",
+          "threshold_eV": 4.5,
+          "label": "O2 Excitation 4.50 eV"
+        },
+        {
+          "id": "C40",
+          "target": "O2",
+          "kind": "EXCITATION",
+          "product": "O2(6.0eV)",
+          "threshold_eV": 6.0,
+          "label": "O2 Excitation 6.00 eV"
+        },
+        {
+          "id": "C41",
+          "target": "O2",
+          "kind": "EXCITATION",
+          "product": "O2(8.4eV)",
+          "threshold_eV": 8.4,
+          "label": "O2 Excitation 8.40 eV"
+        },
+        {
+          "id": "C42",
+          "target": "O2",
+          "kind": "EXCITATION",
+          "product": "O2(9.97eV)",
+          "threshold_eV": 9.97,
+          "label": "O2 Excitation 9.97 eV"
+        },
+        {
+          "id": "C43",
+          "target": "O2",
+          "kind": "IONIZATION",
+          "product": "O2^+",
+          "threshold_eV": 12.06,
+          "label": "O2 Ionization 12.06 eV"
+        }
+      ],
+      "source_sha256": {
+        "../cross_sections/Phelps_N2-O2_20261026.txt": "7e96a9137c3bca3ff64c10afee9077b6f3742f4823d3dea9f095b689449618e8"
+      }
+    },
+    "update_mode": "coupled",
+    "update_ns": 1.0,
+    "cells": 400,
+    "rtol": 1e-06
+  },
+  "solver": {
+    "end_ns": 100.0,
+    "points": 501,
+    "rtol": 1e-06,
+    "atol_density_m3": 1000.0
+  },
+  "diagnostics_species": [],
+  "notes": "Converted from existing inputs; no reactions or cross sections added."
+}

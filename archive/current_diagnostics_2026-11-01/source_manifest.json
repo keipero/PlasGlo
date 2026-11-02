@@ -1,0 +1,49 @@
+[
+  {
+    "source": "current_diagnostics.py",
+    "archived": "current_diagnostics.py",
+    "sha256": "df043e0adc3e680cfeac756047014e1b92f9fc626a59f3a329c7b34d554a7c8b",
+    "pre_documentation_sha256": "e235003ff06edf830b872fce0f67bef96aa19bd7c1d6c60a989544524b65ac75",
+    "pre_documentation_backup": "outputs/verification/pep8/original_sources.zip"
+  },
+  {
+    "source": "test_current_diagnostics.py",
+    "archived": "test_current_diagnostics.py",
+    "sha256": "c76a62efedc287b2c57604657c8ee0f9ed912eeb57ab237b4c984196e3ee8d7e",
+    "pre_documentation_sha256": "507be58a128b3d02718727b5035d3efc652b6aadf3379fc8fbbfdc9c644aff2a",
+    "pre_documentation_backup": "outputs/verification/pep8/original_sources.zip"
+  },
+  {
+    "source": "CURRENT_MODEL.md",
+    "archived": "CURRENT_MODEL.md",
+    "sha256": "fe6ab107eaea4f8a9c412f39538c7c41f6ff322b30ede014db31d8165ac9db26"
+  },
+  {
+    "source": "run_nitrogen.ipynb",
+    "archived": "run_nitrogen_with_current.ipynb",
+    "sha256": "503e7155e565d9f6162336db8c5bbcc28c62f56539f7ce28e65a253969f86e0d",
+    "pre_documentation_sha256": "9f5128e1c3ecc04b3f9d53c00f8fa0edca7298e288d198f20f602bb99227f25a",
+    "pre_documentation_backup": "outputs/verification/pep8/original_sources.zip"
+  },
+  {
+    "source": "verification/validate_nitrogen_notebook.py",
+    "archived": "validate_notebook_with_current.py",
+    "sha256": "3dd1973bc64e4e6efdb043bc94102444047304050ea1b5eb14c46384afa48dfb",
+    "pre_documentation_sha256": "0d160b022dc04f3e9396d41a2378876f3dcbd6d13cdc31f6a278be0aabb807ba",
+    "pre_documentation_backup": "outputs/verification/pep8/original_sources.zip"
+  },
+  {
+    "source": "bolos_coupling.py",
+    "archived": "bolos_coupling_with_current_support.py",
+    "sha256": "b26f91b4ee92b2c5f5600c5c7d7595cd2fa70b898d03c0b051b580eeb0eb743a",
+    "pre_documentation_sha256": "2a51f3e6b87a042431e2ea3ddf97da8a9afa2ac4880a6e6a6cdfc3e69f78a358",
+    "pre_documentation_backup": "outputs/verification/pep8/original_sources.zip"
+  },
+  {
+    "source": "compare_zdplaskin.py",
+    "archived": "compare_zdplaskin_with_current_support.py",
+    "sha256": "a49aadd03a04337a1f6a717e62d7b8c848dff084da8ec1e576be1f02476ccf09",
+    "pre_documentation_sha256": "6a1325401efe9f37bd560564f0846f66b6304ddd670dc9eff4a5a43729bb38cd",
+    "pre_documentation_backup": "outputs/verification/pep8/original_sources.zip"
+  }
+]

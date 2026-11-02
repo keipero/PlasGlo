@@ -1,0 +1,17 @@
+[
+  {
+    "source": "C:\\Users\\daiko\\Documents\\Python_venvSystem\\3.14system\\ZDplasKin_analysis\\build\\argon\\kinet.inp",
+    "local_file": "kinet.inp",
+    "sha256": "1b8c33dff6452546f1cc6a0c557d60e31dad20e1b31135d8fc44ae251af8f44c"
+  },
+  {
+    "source": "C:\\Users\\daiko\\Documents\\Python_venvSystem\\3.14system\\ZDplasKin_analysis\\build\\argon\\user_code.F90",
+    "local_file": "user_code.F90",
+    "sha256": "046106bee8f4e91887758a5a085ffaee43e1a0630265d75983856833a8215946"
+  },
+  {
+    "source": "C:\\Users\\daiko\\Documents\\Python_venvSystem\\3.14system\\ZDplasKin_analysis\\examples\\official1\\bolsigdb.dat",
+    "local_file": "bolsigdb.dat",
+    "sha256": "74392db40304d8fd7dbe16696b59cb0a7b4fd51a321f696d0645a5ecf5878392"
+  }
+]

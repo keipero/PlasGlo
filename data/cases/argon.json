@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "name": "argon",
+  "mechanism": {
+    "schema_version": 1,
+    "species": [
+      {
+        "name": "E",
+        "composition": {},
+        "charge": -1,
+        "electron": true
+      },
+      {
+        "name": "AR",
+        "composition": {
+          "Ar": 1
+        },
+        "charge": 0,
+        "excited": false
+      },
+      {
+        "name": "AR^+",
+        "composition": {
+          "Ar": 1
+        },
+        "charge": 1,
+        "excited": false
+      }
+    ],
+    "reactions": "../mechanisms/argon.csv",
+    "third_bodies": {
+      "ANY_NEUTRAL": {
+        "AR": 1.0
+      }
+    },
+    "variables": [],
+    "source_sha256": {
+      "../../samples/gases/argon/kinet.inp": "1b8c33dff6452546f1cc6a0c557d60e31dad20e1b31135d8fc44ae251af8f44c"
+    },
+    "provenance": "../../samples/gases/argon/provenance.json"
+  },
+  "gas": {
+    "temperature_K": 301.0,
+    "pressure_Pa": 103893.83725000001,
+    "mole_fractions": {
+      "AR": 1.0
+    }
+  },
+  "initial_densities_m3": {
+    "E": 1000000.0,
+    "AR": 2.5e+25,
+    "AR^+": 1000000.0
+  },
+  "field": {
+    "td": 51.0,
+    "duration_ns": null
+  },
+  "electrons": {
+    "profile": {
+      "cross_sections": [
+        "../../samples/gases/argon/bolsigdb.dat"
+      ],
+      "targets": {
+        "Ar": "AR"
+      },
+      "channels": [
+        {
+          "id": "AR->MOMENTUM",
+          "target": "Ar",
+          "kind": "EFFECTIVE",
+          "product": null,
+          "threshold_eV": 0.0
+        },
+        {
+          "id": "AR->AR*",
+          "target": "Ar",
+          "kind": "EXCITATION",
+          "product": "Ar*",
+          "threshold_eV": 11.5
+        },
+        {
+          "id": "AR->AR^+",
+          "target": "Ar",
+          "kind": "IONIZATION",
+          "product": "Ar^+",
+          "threshold_eV": 15.8
+        }
+      ],
+      "source_sha256": {
+        "../../samples/gases/argon/bolsigdb.dat": "74392db40304d8fd7dbe16696b59cb0a7b4fd51a321f696d0645a5ecf5878392"
+      }
+    },
+    "update_mode": "frozen",
+    "cells": 400,
+    "rtol": 1e-06
+  },
+  "solver": {
+    "end_ns": 300.0,
+    "points": 31,
+    "rtol": 1e-08,
+    "atol_density_m3": 0.0001
+  },
+  "diagnostics_species": [],
+  "notes": "Converted from existing inputs; no reactions or cross sections added."
+}

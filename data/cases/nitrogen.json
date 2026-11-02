@@ -1,0 +1,467 @@
+{
+  "schema_version": 1,
+  "name": "nitrogen",
+  "mechanism": {
+    "schema_version": 1,
+    "species": [
+      {
+        "name": "E",
+        "composition": {},
+        "charge": -1,
+        "electron": true
+      },
+      {
+        "name": "N2",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": false
+      },
+      {
+        "name": "N2^+",
+        "composition": {
+          "N": 2
+        },
+        "charge": 1,
+        "excited": false
+      },
+      {
+        "name": "N2(V1)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2(V2)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2(V3)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2(V4)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2(V5)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2(V6)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2(V7)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2(V8)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2(A3)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2(B3)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2(A1L)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N2(C3)",
+        "composition": {
+          "N": 2
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N",
+        "composition": {
+          "N": 1
+        },
+        "charge": 0,
+        "excited": false
+      },
+      {
+        "name": "N(2D)",
+        "composition": {
+          "N": 1
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N(2P)",
+        "composition": {
+          "N": 1
+        },
+        "charge": 0,
+        "excited": true
+      },
+      {
+        "name": "N^+",
+        "composition": {
+          "N": 1
+        },
+        "charge": 1,
+        "excited": false
+      },
+      {
+        "name": "N3^+",
+        "composition": {
+          "N": 3
+        },
+        "charge": 1,
+        "excited": false
+      },
+      {
+        "name": "N4^+",
+        "composition": {
+          "N": 4
+        },
+        "charge": 1,
+        "excited": false
+      }
+    ],
+    "reactions": "../mechanisms/nitrogen.csv",
+    "third_bodies": {
+      "ANY_NEUTRAL": {
+        "N2": 1.0,
+        "N2(V1)": 1.0,
+        "N2(V2)": 1.0,
+        "N2(V3)": 1.0,
+        "N2(V4)": 1.0,
+        "N2(V5)": 1.0,
+        "N2(V6)": 1.0,
+        "N2(V7)": 1.0,
+        "N2(V8)": 1.0,
+        "N2(A3)": 1.0,
+        "N2(B3)": 1.0,
+        "N2(A1L)": 1.0,
+        "N2(C3)": 1.0,
+        "N": 1.0,
+        "N(2D)": 1.0,
+        "N(2P)": 1.0
+      }
+    },
+    "variables": [
+      [
+        "dtion",
+        "2.d0/(3.d0*1.3807d-16)*1.6605d-24*(1.d-17*EN)**2"
+      ],
+      [
+        "tionn",
+        "Tgas + dTion*14.d0*8.d19**2"
+      ],
+      [
+        "tionn2",
+        "Tgas + dTion*28.d0*4.1d19**2"
+      ],
+      [
+        "tionn4",
+        "Tgas + dTion*56.d0*7.d19**2"
+      ],
+      [
+        "teffn",
+        "(TionN + 0.5d0*Tgas)/1.5d0"
+      ],
+      [
+        "teffn2",
+        "(TionN2 + Tgas)/2.d0"
+      ],
+      [
+        "teffn4",
+        "(TionN4 + 2.d0*Tgas)/3.d0"
+      ],
+      [
+        "qvibn2",
+        "exp(-0.290d0*11605.d0/Tgas)"
+      ],
+      [
+        "kvt10_n2n2",
+        "7.80d-12*Tgas*exp(-218.d0/Tgas**(1.d0/3.d0)+690.d0/Tgas)/(1.d0-QvibN2)"
+      ],
+      [
+        "kvt10_n2n",
+        "4.d-16*(Tgas/300.d0)**0.5d0"
+      ],
+      [
+        "kvt01_n2n2",
+        "kVT10_N2N2*QvibN2"
+      ],
+      [
+        "kvt01_n2n",
+        "kVT10_N2N*QvibN2"
+      ]
+    ],
+    "source_sha256": {
+      "../../samples/gases/nitrogen/kinet.inp": "94ad20087ab0e5a6ed0068ee38ffbaceda9bfe60ee03587201081d98f7c1f46a"
+    },
+    "provenance": "../../samples/gases/nitrogen/provenance.json"
+  },
+  "gas": {
+    "temperature_K": 300.0,
+    "pressure_Pa": 101325.0,
+    "mole_fractions": {
+      "N2": 1.0
+    }
+  },
+  "initial_densities_m3": {
+    "E": 100000000000000.0,
+    "N2": 2.4463132917924826e+25,
+    "N2^+": 100000000000000.0
+  },
+  "field": {
+    "td": 1000.0,
+    "duration_ns": null
+  },
+  "electrons": {
+    "profile": {
+      "cross_sections": [
+        "../../samples/gases/nitrogen/bolsigdb.dat"
+      ],
+      "targets": {
+        "N2": "N2"
+      },
+      "channels": [
+        {
+          "id": "N2->MOMENTUM",
+          "target": "N2",
+          "kind": "ELASTIC",
+          "product": null,
+          "threshold_eV": 0.0
+        },
+        {
+          "id": "N2->N2(ROT)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(rot)",
+          "threshold_eV": 0.02
+        },
+        {
+          "id": "N2->N2(V1RES)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(v1res)",
+          "threshold_eV": 0.29
+        },
+        {
+          "id": "N2->N2(V1)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(v1)",
+          "threshold_eV": 0.291
+        },
+        {
+          "id": "N2->N2(V2)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(v2)",
+          "threshold_eV": 0.59
+        },
+        {
+          "id": "N2->N2(V3)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(v3)",
+          "threshold_eV": 0.88
+        },
+        {
+          "id": "N2->N2(V4)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(v4)",
+          "threshold_eV": 1.17
+        },
+        {
+          "id": "N2->N2(V5)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(v5)",
+          "threshold_eV": 1.47
+        },
+        {
+          "id": "N2->N2(V6)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(v6)",
+          "threshold_eV": 1.76
+        },
+        {
+          "id": "N2->N2(V7)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(v7)",
+          "threshold_eV": 2.06
+        },
+        {
+          "id": "N2->N2(V8)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(v8)",
+          "threshold_eV": 2.35
+        },
+        {
+          "id": "N2->N2(A3,V0-4)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(A3,v0-4)",
+          "threshold_eV": 6.17
+        },
+        {
+          "id": "N2->N2(A3,V5-9)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(A3,v5-9)",
+          "threshold_eV": 7.0
+        },
+        {
+          "id": "N2->N2(B3)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(B3)",
+          "threshold_eV": 7.35
+        },
+        {
+          "id": "N2->N2(W3)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(W3)",
+          "threshold_eV": 7.36
+        },
+        {
+          "id": "N2->N2(A3,V10-)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(A3,v10-)",
+          "threshold_eV": 7.8
+        },
+        {
+          "id": "N2->N2(B'3)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(B'3)",
+          "threshold_eV": 8.16
+        },
+        {
+          "id": "N2->N2(A'1)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(a'1)",
+          "threshold_eV": 8.4
+        },
+        {
+          "id": "N2->N2(A1)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(a1)",
+          "threshold_eV": 8.55
+        },
+        {
+          "id": "N2->N2(W1)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(w1)",
+          "threshold_eV": 8.89
+        },
+        {
+          "id": "N2->N2(C3)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(C3)",
+          "threshold_eV": 11.03
+        },
+        {
+          "id": "N2->N2(E3)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(E3)",
+          "threshold_eV": 11.87
+        },
+        {
+          "id": "N2->N2(A''1)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(a''1)",
+          "threshold_eV": 12.25
+        },
+        {
+          "id": "N2->N2(SUM)",
+          "target": "N2",
+          "kind": "EXCITATION",
+          "product": "N2(SUM)",
+          "threshold_eV": 13.0
+        },
+        {
+          "id": "N2->N2^+",
+          "target": "N2",
+          "kind": "IONIZATION",
+          "product": "N2^+",
+          "threshold_eV": 15.6
+        }
+      ],
+      "source_sha256": {
+        "../../samples/gases/nitrogen/bolsigdb.dat": "40f563641a54588720594a88ef2f6ba0cd4916fb83c7622c10011e3d2360d28d"
+      }
+    },
+    "update_mode": "frozen",
+    "cells": 400,
+    "rtol": 1e-06
+  },
+  "solver": {
+    "end_ns": 1.0,
+    "points": 10001,
+    "rtol": 1e-08,
+    "atol_density_m3": 0.0001
+  },
+  "diagnostics_species": [],
+  "notes": "Converted from existing inputs; no reactions or cross sections added."
+}

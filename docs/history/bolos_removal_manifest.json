@@ -1,0 +1,271 @@
+{
+  "date_jst": "2026-10-31",
+  "removed_directory": "C:\\Users\\daiko\\Documents\\Python_venvSystem\\3.14system\\Py3ZDPlasChem\\chemistry_0d\\bolos-python3",
+  "replacement_repository": "https://github.com/keipero/Py3bolos",
+  "inspected_replacement_commit": "cedc937479b17f4d51ce87974b6787d40149d2e3",
+  "status": "removed",
+  "files": [
+    {
+      "path": "EXECUTION_GUIDE.md",
+      "bytes": 29711,
+      "sha256": "6d8dc5f0ab362d6065ed7a0c2142a684d108588aa020ff8fc828baeea850a3f8"
+    },
+    {
+      "path": "PORTING_NOTES.md",
+      "bytes": 4248,
+      "sha256": "06cd37fbfa14e72aabadc07b8e64cbce69a48b36eae8b59a2c44c9c866f77fb4"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 85,
+      "sha256": "30f4a45624656b7b8e55560bbc67789bcf59a33d5b589ce415c9a5ac32e1a64b"
+    },
+    {
+      "path": "README.rst",
+      "bytes": 1943,
+      "sha256": "c0ed5954ab2ab3bc27bb3e26edea21f8e8cbbc7c8f905e0e47868eab0dd10f27"
+    },
+    {
+      "path": "run_basic.py",
+      "bytes": 3601,
+      "sha256": "cfc4800ce7e24e328b4fdbdcfb53dec9f0de0b9c4ca01e0a18f8b4baae0a5352"
+    },
+    {
+      "path": "run_phelps.ipynb",
+      "bytes": 83224,
+      "sha256": "e1a2ca470b4add969fdd1519661139f372f52578495c214eb4217ad6d2bb4a51"
+    },
+    {
+      "path": "setup.py",
+      "bytes": 2759,
+      "sha256": "1bf09f9db3bb2816e899e6f05eb7b37e12423344083032b3a3f1551e1c052a80"
+    },
+    {
+      "path": "validate_port.py",
+      "bytes": 6983,
+      "sha256": "f4861e9002945e58337cf4038018573356f1752017682cbbdb1effdd0a8b6a15"
+    },
+    {
+      "path": "validation_results.json",
+      "bytes": 10854,
+      "sha256": "418f4a95a8576ba14a58ac335117e626bb9efb73c667a279f31b246f2635c4ac"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 1579,
+      "sha256": "0f947e6899406e148452a1c9d19e623b9ef2f6cb6925766622ca3929923cd2e3"
+    },
+    {
+      "path": "bolos\\__init__.py",
+      "bytes": 115,
+      "sha256": "76acf25ce8820b5da01de9f31845324e4c36a886c6e742a27cb9d38d409f550a"
+    },
+    {
+      "path": "bolos\\_compat.py",
+      "bytes": 1387,
+      "sha256": "0cae83c96fb20e5ab89b89cf6d9dacab4dd7d8bee9ea596f3fc199b851aeb9bd"
+    },
+    {
+      "path": "bolos\\grid.py",
+      "bytes": 5852,
+      "sha256": "aef33d2519b780b07258552e158c6633f2e5e65bbd1e24b7e016ec7096568375"
+    },
+    {
+      "path": "bolos\\parser.py",
+      "bytes": 4101,
+      "sha256": "b02cd1e94776ae2f983b16925a251a7d6fb3f572ac9098910e3c32ae356ca585"
+    },
+    {
+      "path": "bolos\\process.py",
+      "bytes": 6497,
+      "sha256": "73cb58a47d6b02d07322c1b094153cfd680f7197c2d6a3ae57cddf9be75d02e0"
+    },
+    {
+      "path": "bolos\\solver.py",
+      "bytes": 25522,
+      "sha256": "6e5744ee62fb9c0c182cce875fc78b748a59cb0d8d1e09089e452adb2fb5fcf8"
+    },
+    {
+      "path": "bolos\\target.py",
+      "bytes": 4316,
+      "sha256": "6a5a4071747fcfa35eb412942ac8ab9ab75d43716b0683b80e440e4a9d366155"
+    },
+    {
+      "path": "bolos\\__pycache__\\__init__.cpython-312.pyc",
+      "bytes": 261,
+      "sha256": "d567a6d4fa91429cd5ae8652cb29cc41f8f0bf590ab300d0d976a80823d20f64"
+    },
+    {
+      "path": "bolos\\__pycache__\\__init__.cpython-314.pyc",
+      "bytes": 186,
+      "sha256": "29a87edab0afa8b7935bc3984d21961a43d1737f3f684a01c362d72a804994ad"
+    },
+    {
+      "path": "bolos\\__pycache__\\_compat.cpython-314.pyc",
+      "bytes": 2898,
+      "sha256": "8611f5b34029846f1c92a01bdecd70bc9941dfba5f1f09685179aefc859efaf7"
+    },
+    {
+      "path": "bolos\\__pycache__\\grid.cpython-314.pyc",
+      "bytes": 9757,
+      "sha256": "d2c64c8605aa4ddf53a6e8f5e2c4467ddf498555fc47915c0811a3797352ed1d"
+    },
+    {
+      "path": "bolos\\__pycache__\\parser.cpython-312.pyc",
+      "bytes": 5401,
+      "sha256": "49d23f32901bc948d1d8faa010fdf2d37053e93cfde019c76bc6de26cdf2941d"
+    },
+    {
+      "path": "bolos\\__pycache__\\parser.cpython-314.pyc",
+      "bytes": 5315,
+      "sha256": "f3963fb362a343294c30459f4ae6ed3eac979af3d849cc00d16528b66e17d3b2"
+    },
+    {
+      "path": "bolos\\__pycache__\\process.cpython-314.pyc",
+      "bytes": 8844,
+      "sha256": "162ab91720847a66267c5ceff39114b00e543684666ae81682b1e1f9e63f9c3f"
+    },
+    {
+      "path": "bolos\\__pycache__\\solver.cpython-314.pyc",
+      "bytes": 30180,
+      "sha256": "9d50241445c52f7ab8ab311fac1a2f87589feb5f69bcba6e59eaf78d7f1a5205"
+    },
+    {
+      "path": "bolos\\__pycache__\\target.cpython-314.pyc",
+      "bytes": 6287,
+      "sha256": "b6ddb16e0caa5ab4abe0b42d02f9e7a8f7df84e513e49b8f57f5add55895a67d"
+    },
+    {
+      "path": "docs\\make.bat",
+      "bytes": 6708,
+      "sha256": "1015ad3917860e768592559214933c03db41f5afddc59346157735a59bfa8bad"
+    },
+    {
+      "path": "docs\\Makefile",
+      "bytes": 6771,
+      "sha256": "0912093dbe86ef34b4d018aed17326811cc379b2350698c599ade78ec424722c"
+    },
+    {
+      "path": "docs\\requirements.txt",
+      "bytes": 9,
+      "sha256": "6fd76396c00246cbe67d63642af559a792e4146ec1d6373bf2fda40e8e20a90e"
+    },
+    {
+      "path": "docs\\source\\api.rst",
+      "bytes": 541,
+      "sha256": "6ac54eebe9c0400c8e97ec2a4f506ab7eba14f4ce19a5ffa5ce4a7322b6c0ea8"
+    },
+    {
+      "path": "docs\\source\\conf.py",
+      "bytes": 9647,
+      "sha256": "6318187d90f1e9e068d7d9d522faaa1289888bbf63da569d88031d43a421f890"
+    },
+    {
+      "path": "docs\\source\\faq.rst",
+      "bytes": 4651,
+      "sha256": "6b3da17005f3f9f3f378a2165fa161945bcb9bb0e6786e6867a17c68e1b9f88f"
+    },
+    {
+      "path": "docs\\source\\index.rst",
+      "bytes": 1895,
+      "sha256": "1022c4d134681a1f57768ffaa8cd215f4f15313364d6b03971fd79e9522c3772"
+    },
+    {
+      "path": "docs\\source\\recipes.rst",
+      "bytes": 38,
+      "sha256": "10dd34824132121e78bf7d72f9b78570ee52f27bf9e267db8d763a30aec4c960"
+    },
+    {
+      "path": "docs\\source\\tutorial.rst",
+      "bytes": 7794,
+      "sha256": "cb5f71b6e99277237241b6664e59de3ce09299332baa7954cc7cc64291958391"
+    },
+    {
+      "path": "docs\\source\\img\\boloslogo-02.png",
+      "bytes": 9998,
+      "sha256": "5100358a29557c80b6ac928a44c616d3a32672338cfc1903cbb7d0ada66d39e1"
+    },
+    {
+      "path": "docs\\source\\img\\boloslogo.png",
+      "bytes": 10133,
+      "sha256": "654493fb0dff96d6f14823e2abe5a03aaf83e53d35511e40f47cd54282d0d485"
+    },
+    {
+      "path": "docs\\source\\img\\boloslogosmall.png",
+      "bytes": 4336,
+      "sha256": "5c812f7b3ff48aa23aacec230de8386ac41de44d294fb9ea3468a24937771b44"
+    },
+    {
+      "path": "docs\\source\\img\\boloslogotrans.png",
+      "bytes": 10133,
+      "sha256": "654493fb0dff96d6f14823e2abe5a03aaf83e53d35511e40f47cd54282d0d485"
+    },
+    {
+      "path": "docs\\source\\__pycache__\\conf.cpython-314.pyc",
+      "bytes": 3281,
+      "sha256": "e3a7a93004c690f627c5cb64281a8c6b82067e0ceff797cb2049e0cc817b6444"
+    },
+    {
+      "path": "samples\\bolsig.py",
+      "bytes": 4685,
+      "sha256": "916efcba797af9b0f4c19b608874a92aa351e7816e729e1eba60a28119b0b630"
+    },
+    {
+      "path": "samples\\single.py",
+      "bytes": 3650,
+      "sha256": "2276109bf44c49e87530a05022188c68f8b9977ae0ea6b796fec92307a1228fd"
+    },
+    {
+      "path": "samples\\__pycache__\\bolsig.cpython-314.pyc",
+      "bytes": 6738,
+      "sha256": "a84ef0bbf89e8ff767c05a925e44abb2f230a5ef560264197e99590dfabc6c66"
+    },
+    {
+      "path": "samples\\__pycache__\\single.cpython-314.pyc",
+      "bytes": 4592,
+      "sha256": "86ae41cc11d77af7cd7c2e7e27c0daf49572f92fc54ab4d996b76f10855aeb17"
+    },
+    {
+      "path": "__marimo__\\session\\run_basic.py.json",
+      "bytes": 83438,
+      "sha256": "f59e5f7c0ec884655d24bf613f3a234f1be6c8064aff42cc9694ad58694d4db0"
+    },
+    {
+      "path": "__pycache__\\setup.cpython-314.pyc",
+      "bytes": 1369,
+      "sha256": "205291e6d4cfae01d297f455513e83744e9ce74091128df21f7d3e478c80c2d8"
+    },
+    {
+      "path": "__pycache__\\validate_port.cpython-314.pyc",
+      "bytes": 14119,
+      "sha256": "5fb3f3f597163a2e72cb5809d17a45d7f9bcd0a1fbd70f5de56f949094a3102d"
+    }
+  ],
+  "protected_files": [
+    {
+      "path": "chemistry_0d\\Phelps\\Phelps_N2-O2_20261026.txt",
+      "sha256": "7e96a9137c3bca3ff64c10afee9077b6f3742f4823d3dea9f095b689449618e8"
+    },
+    {
+      "path": "chemistry_0d\\Phelps\\N2-O2_80-20_2000Td.dat",
+      "sha256": "bb66e2d255da5ab70354c6ad803031a2601d2c3e39bfd821c391ac959ed86708"
+    },
+    {
+      "path": "chemistry_0d\\mechanisms\\atomic_oxygen.txt",
+      "sha256": "1f537f779e041e9c2a77902bb5b1c9f8135d90ee250191ca65486e5304aab01c"
+    },
+    {
+      "path": "chemistry_0d\\output\\densities.npz",
+      "sha256": "644c6c9488c2a810010695f39a7b63741905ee429fc2945dde387514079c3b95"
+    },
+    {
+      "path": "chemistry_0d\\output_atomic_oxygen\\densities.npz",
+      "sha256": "848a76cd12e536c3eb3a2b07a04315de278534e03acea9c461e3fbc96cbb0012"
+    },
+    {
+      "path": "chemistry_0d\\kinetics.py",
+      "sha256": "5778a83782c7e11915d511c70be00267922eea2bf264efb3d1d6339be39b320a"
+    }
+  ],
+  "protected_files_unchanged": true
+}

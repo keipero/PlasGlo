@@ -1,0 +1,565 @@
+﻿{
+    "date":  "2026-10-31",
+    "status":  "removed",
+    "files":  [
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output\\densities.csv",
+                      "bytes":  564405
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output\\densities.npz",
+                      "bytes":  122866
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output\\densities.png",
+                      "bytes":  66230
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output\\diagnostics.json",
+                      "bytes":  2822
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output\\field_history.csv",
+                      "bytes":  25568
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output\\swarm_history.csv",
+                      "bytes":  90745
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output\\swarm_history.npz",
+                      "bytes":  60354
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output\\used_reactions.tsv",
+                      "bytes":  8853
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\convergence.json",
+                      "bytes":  212
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\densities.csv",
+                      "bytes":  1352605
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\densities.npz",
+                      "bytes":  281248
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\densities.png",
+                      "bytes":  113684
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\diagnostics.json",
+                      "bytes":  3547
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\field_history.csv",
+                      "bytes":  61268
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\n2c_balance.csv",
+                      "bytes":  152546
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\n2c_balance.png",
+                      "bytes":  87264
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\n2c_mechanism_comparison.png",
+                      "bytes":  66635
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\swarm_history.csv",
+                      "bytes":  90745
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\swarm_history.npz",
+                      "bytes":  38602
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\used_reactions.tsv",
+                      "bytes":  28505
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\validation_summary.json",
+                      "bytes":  823
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\original\\densities.csv",
+                      "bytes":  1352605
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\original\\densities.npz",
+                      "bytes":  281180
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\original\\densities.png",
+                      "bytes":  113704
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\original\\diagnostics.json",
+                      "bytes":  3053
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\original\\field_history.csv",
+                      "bytes":  61268
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\original\\n2c_balance.csv",
+                      "bytes":  152546
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\original\\n2c_balance.png",
+                      "bytes":  86057
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\original\\swarm_history.csv",
+                      "bytes":  90745
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\original\\swarm_history.npz",
+                      "bytes":  38623
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\output_atomic_oxygen\\original\\used_reactions.tsv",
+                      "bytes":  28161
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\notebook_output\\densities.csv",
+                      "bytes":  564405
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\notebook_output\\densities.npz",
+                      "bytes":  168663
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\notebook_output\\densities.png",
+                      "bytes":  91842
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\notebook_output\\diagnostics.json",
+                      "bytes":  1029
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\notebook_output\\used_reactions.tsv",
+                      "bytes":  8853
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\depletion_audit\\report.json",
+                      "bytes":  4814
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\__marimo__\\session\\ZDchem.py.json",
+                      "bytes":  464152
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\__pycache__\\bolos_coupling.cpython-314.pyc",
+                      "bytes":  13721
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\__pycache__\\compare_zdplaskin.cpython-314.pyc",
+                      "bytes":  47823
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\__pycache__\\kinetics.cpython-314.pyc",
+                      "bytes":  61888
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\__pycache__\\test_atomic_oxygen.cpython-314.pyc",
+                      "bytes":  6404
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\__pycache__\\test_bolos_coupling.cpython-314.pyc",
+                      "bytes":  16869
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\__pycache__\\test_conditions.cpython-314.pyc",
+                      "bytes":  17019
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\__pycache__\\test_kinetics.cpython-314.pyc",
+                      "bytes":  14374
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\__pycache__\\ZDchem.cpython-314.pyc",
+                      "bytes":  8844
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\n2c_afterglow_review\\comparison.png",
+                      "bytes":  105189
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\n2c_afterglow_review\\report.json",
+                      "bytes":  7531
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\n2c_afterglow_review\\short_pulse.npz",
+                      "bytes":  142783
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\comparison.png",
+                      "bytes":  271777
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\comparison_metrics.csv",
+                      "bytes":  5438
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\early_avalanche.png",
+                      "bytes":  82126
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\matched_all_species_metrics.csv",
+                      "bytes":  1634
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\README.md",
+                      "bytes":  5239
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\report.json",
+                      "bytes":  21954
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\same_mechanism_bolos.json",
+                      "bytes":  277
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\same_mechanism_bolos.npz",
+                      "bytes":  1568109
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\same_mechanism_coefficients.csv",
+                      "bytes":  4485
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\current_interval_check\\densities.csv",
+                      "bytes":  11261405
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\current_interval_check\\densities.npz",
+                      "bytes":  1374032
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\current_interval_check\\densities.png",
+                      "bytes":  158445
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\current_interval_check\\diagnostics.json",
+                      "bytes":  2617
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\current_interval_check\\field_history.csv",
+                      "bytes":  510068
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\current_interval_check\\swarm_history.csv",
+                      "bytes":  60645
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\current_interval_check\\swarm_history.npz",
+                      "bytes":  69990
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\current_komuro\\densities.csv",
+                      "bytes":  11261405
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\current_komuro\\densities.npz",
+                      "bytes":  1373911
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\current_komuro\\densities.png",
+                      "bytes":  158493
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\current_komuro\\diagnostics.json",
+                      "bytes":  2615
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\current_komuro\\field_history.csv",
+                      "bytes":  510068
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\current_komuro\\swarm_history.csv",
+                      "bytes":  120845
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\current_komuro\\swarm_history.npz",
+                      "bytes":  134135
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\zdplaskin_ee_off\\bolsigdb.log",
+                      "bytes":  448
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\zdplaskin_ee_off\\compile.log",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\zdplaskin_ee_off\\densities.csv",
+                      "bytes":  5510682
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\zdplaskin_ee_off\\dvode_f90_m.mod",
+                      "bytes":  5243
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\zdplaskin_ee_off\\run_control.exe",
+                      "bytes":  1351439
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\zdplaskin_ee_off\\stdout.log",
+                      "bytes":  1712
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\zdplaskin_ee_off\\zdplaskin.mod",
+                      "bytes":  3854
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\zdplaskin_original_rebuild\\bolsigdb.log",
+                      "bytes":  448
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\zdplaskin_original_rebuild\\compile.log",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\zdplaskin_original_rebuild\\densities.csv",
+                      "bytes":  5510682
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\zdplaskin_original_rebuild\\dvode_f90_m.mod",
+                      "bytes":  5243
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\zdplaskin_original_rebuild\\run_control.exe",
+                      "bytes":  1351439
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\zdplaskin_original_rebuild\\stdout.log",
+                      "bytes":  1769
+                  },
+                  {
+                      "path":  "Py3ZDPlasChem-master\\validation_zdplaskin_nitrogen\\zdplaskin_original_rebuild\\zdplaskin.mod",
+                      "bytes":  3854
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\diagnostic_results.json",
+                      "bytes":  1447
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\doctest.log",
+                      "bytes":  4571
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\doctest_results.xml",
+                      "bytes":  5121
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\energy_balance_results.json",
+                      "bytes":  1931
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\environment.json",
+                      "bytes":  572
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\pytest.log",
+                      "bytes":  8739
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\pytest_results.xml",
+                      "bytes":  9982
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\source_manifest.json",
+                      "bytes":  784
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation.log",
+                      "bytes":  2628
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\electron_energy_integration\\input_inventory.log",
+                      "bytes":  6805
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\electron_energy_integration\\synthetic_pulse.npz",
+                      "bytes":  11525
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\electron_energy_integration\\synthetic_pulse.png",
+                      "bytes":  118197
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\electron_energy_integration\\validation.log",
+                      "bytes":  3818
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\electron_energy_integration\\validation_results.json",
+                      "bytes":  2520
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\comparison_overview.png",
+                      "bytes":  243579
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\nitrogen_all_species_errors.png",
+                      "bytes":  89938
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\run_summary.json",
+                      "bytes":  163
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\source_manifest_after.json",
+                      "bytes":  3159
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\source_manifest_before.json",
+                      "bytes":  3159
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\summary.json",
+                      "bytes":  572
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\argon\\comparison.npz",
+                      "bytes":  1867
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\argon\\report.json",
+                      "bytes":  2010
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\argon\\native\\bolsigdb.log",
+                      "bytes":  170
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\argon\\native\\coefficients.csv",
+                      "bytes":  3168
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\argon\\native\\compile.log",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\argon\\native\\densities.csv",
+                      "bytes":  3149
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\argon\\native\\dvode_f90_m.mod",
+                      "bytes":  5243
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\argon\\native\\run_control.exe",
+                      "bytes":  1319150
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\argon\\native\\stdout.log",
+                      "bytes":  333
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\argon\\native\\zdplaskin.mod",
+                      "bytes":  3856
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\nitrogen\\coefficients.csv",
+                      "bytes":  4485
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\nitrogen\\comparison.npz",
+                      "bytes":  6222273
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\nitrogen\\metrics.csv",
+                      "bytes":  1554
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\nitrogen\\report.json",
+                      "bytes":  17673
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\nitrogen\\zdplaskin_ee_off\\bolsigdb.log",
+                      "bytes":  448
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\nitrogen\\zdplaskin_ee_off\\compile.log",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\nitrogen\\zdplaskin_ee_off\\densities.csv",
+                      "bytes":  5510682
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\nitrogen\\zdplaskin_ee_off\\dvode_f90_m.mod",
+                      "bytes":  5243
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\nitrogen\\zdplaskin_ee_off\\run_control.exe",
+                      "bytes":  1351439
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\nitrogen\\zdplaskin_ee_off\\stdout.log",
+                      "bytes":  1712
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\nitrogen\\zdplaskin_ee_off\\zdplaskin.mod",
+                      "bytes":  3854
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\nitrogen\\zdplaskin_original_rebuild\\bolsigdb.log",
+                      "bytes":  448
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\nitrogen\\zdplaskin_original_rebuild\\compile.log",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\nitrogen\\zdplaskin_original_rebuild\\densities.csv",
+                      "bytes":  5510682
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\nitrogen\\zdplaskin_original_rebuild\\dvode_f90_m.mod",
+                      "bytes":  5243
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\nitrogen\\zdplaskin_original_rebuild\\run_control.exe",
+                      "bytes":  1351439
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\nitrogen\\zdplaskin_original_rebuild\\stdout.log",
+                      "bytes":  1769
+                  },
+                  {
+                      "path":  "pygmol-master\\analysis\\zdplaskin_validation\\nitrogen\\zdplaskin_original_rebuild\\zdplaskin.mod",
+                      "bytes":  3854
+                  }
+              ],
+    "protected_inputs":  [
+                             {
+                                 "path":  "Py3ZDPlasChem-master\\Phelps\\Phelps_N2-O2_20261026.txt",
+                                 "sha256":  "7E96A9137C3BCA3FF64C10AFEE9077B6F3742F4823D3DEA9F095B689449618E8"
+                             },
+                             {
+                                 "path":  "Py3ZDPlasChem-master\\Phelps\\N2-O2_80-20_2000Td.dat",
+                                 "sha256":  "BB66E2D255DA5AB70354C6AD803031A2601D2C3E39BFD821C391AC959ED86708"
+                             },
+                             {
+                                 "path":  "Py3ZDPlasChem-master\\mechanisms\\atomic_oxygen.txt",
+                                 "sha256":  "1F537F779E041E9C2A77902BB5B1C9F8135D90EE250191CA65486E5304AAB01C"
+                             },
+                             {
+                                 "path":  "Py3ZDPlasChem-master\\mechanisms\\air_chemistry_Komuro_reactions.txt",
+                                 "sha256":  "404FFB511B855302C9F99AC2E12A655FD6846B8C9A16812B932089B72289C66C"
+                             },
+                             {
+                                 "path":  "pygmol-master\\run_tests\\resources\\solutions.csv",
+                                 "sha256":  "BB158AC24E4B084FBDBAA5E78F1450FE19104790F7E7FB8096D3ACE712E9BAC2"
+                             }
+                         ],
+    "protected_inputs_unchanged":  true
+}

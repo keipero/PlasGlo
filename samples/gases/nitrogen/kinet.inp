@@ -1,0 +1,187 @@
+# Nitrogen mechanism revision 2: electron impact + sourced heavy chemistry.
+# Conditions and initial densities belong in the master code, not this file.
+# Intended conditions: pure N2, 1 atm, 300 K, E/N=1000 Td for 0 <= t <= 10 ns.
+# Initial e and N2^+ densities: 1.0e8 cm^-3 each.
+#
+# DATA: bolsigdb.dat from examples/official3 (SIGLO N2).
+# Compatibility edit: a double quote in the N2(a''1) process header is
+# replaced by two apostrophes; preprocessor 2.0a rejects double quotes.
+# All energy / cross-section numbers are unchanged.
+# Original data: A.V. Phelps and L.C. Pitchford, Phys. Rev. A 31, 2932 (1985).
+# Retain the full cross-section file for references and dataset notes.
+# Electronic lumping and SUM dissociation follow the distributed
+# kinet_N2_O2_v1.03.inp. Here N2(a1L) denotes its lumped N2(a`1) state.
+# This is NOT the complete official nitrogen or air mechanism.
+#
+# SOURCES:
+# Heavy reactions / VT: distributed kinet_N2_O2_v1.03.inp, sections citing
+# Capitelli et al., Plasma Kinetics in Atmospheric Gases (2000), pp.105,
+# 141,157,159,161,170,179; Gordiets1995 and Guerra2004 as cited there.
+# This is a nitrogen-only subset, NOT the full original mechanism.
+# No new experimental cross sections are fabricated.
+#
+# LIMITS:
+# Only N2 ground state is a BOLSIG target. Atomic electron collisions,
+# excited-state ionization, superelastic collisions and VV are still absent.
+# Forward vibration and VT are included, but electron de-excitation is not.
+# High-field ion temperatures use the original constant-mobility estimate;
+# these rates are NOT validated at 1000 Td. Sensitivity analysis is required.
+# N4+ dissociation retains the original air-scheme cap of 1e-10 cm3/s.
+# Its exponent is bounded BEFORE evaluation, preserving that capped law.
+# Fixed 300 K, fixed-volume, imposed-field model: no heating or circuit.
+# A completed numerical run does not establish physical validity at 1000 Td.
+
+ELEMENTS
+e N
+END
+
+BOLSIG
+N2
+END
+
+SPECIES
+e N2 N2^+
+N2(v1) N2(v2) N2(v3) N2(v4) N2(v5) N2(v6) N2(v7) N2(v8)
+N2(A3) N2(B3) N2(a1L) N2(C3)
+N N(2D) N(2P) N^+ N3^+ N4^+
+END
+
+REACTIONS
+
+# Original air-mechanism effective ion-neutral temperatures [K].
+$ double precision :: dTion, TionN, TionN2, TionN4, TeffN, TeffN2, TeffN4
+$ dTion = 2.d0/(3.d0*1.3807d-16)*1.6605d-24*(1.d-17*EN)**2
+$ TionN = Tgas + dTion*14.d0*8.d19**2
+$ TionN2 = Tgas + dTion*28.d0*4.1d19**2
+$ TionN4 = Tgas + dTion*56.d0*7.d19**2
+$ TeffN = (TionN + 0.5d0*Tgas)/1.5d0
+$ TeffN2 = (TionN2 + Tgas)/2.d0
+$ TeffN4 = (TionN4 + 2.d0*Tgas)/3.d0
+
+# VT harmonic-oscillator model, original air mechanism [Capitelli p.105].
+$ double precision :: QvibN2, kVT10_N2N2, kVT01_N2N2, kVT10_N2N, kVT01_N2N
+$ QvibN2 = exp(-0.290d0*11605.d0/Tgas)
+$ kVT10_N2N2 = 7.80d-12*Tgas*exp(-218.d0/Tgas**(1.d0/3.d0)+690.d0/Tgas)/(1.d0-QvibN2)
+$ kVT10_N2N = 4.d-16*(Tgas/300.d0)**0.5d0
+$ kVT01_N2N2 = kVT10_N2N2*QvibN2
+$ kVT01_N2N = kVT10_N2N*QvibN2
+
+# Vibrational excitation (two distinct data channels populate v1).
+e + N2 => e + N2(v1) ! BOLSIG N2 -> N2(v1res)
+e + N2 => e + N2(v1) ! BOLSIG N2 -> N2(v1)
+e + N2 => e + N2(v2) ! BOLSIG N2 -> N2(v2)
+e + N2 => e + N2(v3) ! BOLSIG N2 -> N2(v3)
+e + N2 => e + N2(v4) ! BOLSIG N2 -> N2(v4)
+e + N2 => e + N2(v5) ! BOLSIG N2 -> N2(v5)
+e + N2 => e + N2(v6) ! BOLSIG N2 -> N2(v6)
+e + N2 => e + N2(v7) ! BOLSIG N2 -> N2(v7)
+e + N2 => e + N2(v8) ! BOLSIG N2 -> N2(v8)
+
+# Electronic excitation; product groups follow the official air scheme.
+e + N2 => e + N2(A3)  ! BOLSIG N2 -> N2(A3,v0-4)
+e + N2 => e + N2(A3)  ! BOLSIG N2 -> N2(A3,v5-9)
+e + N2 => e + N2(A3)  ! BOLSIG N2 -> N2(A3,v10-)
+e + N2 => e + N2(B3)  ! BOLSIG N2 -> N2(B3)
+e + N2 => e + N2(B3)  ! BOLSIG N2 -> N2(W3)
+e + N2 => e + N2(B3)  ! BOLSIG N2 -> N2(B'3)
+e + N2 => e + N2(a1L) ! BOLSIG N2 -> N2(a'1)
+e + N2 => e + N2(a1L) ! BOLSIG N2 -> N2(a1)
+e + N2 => e + N2(a1L) ! BOLSIG N2 -> N2(w1)
+e + N2 => e + N2(C3)  ! BOLSIG N2 -> N2(C3)
+e + N2 => e + N2(C3)  ! BOLSIG N2 -> N2(E3)
+e + N2 => e + N2(C3)  ! BOLSIG N2 -> N2(a''1)
+
+# Effective dissociation channel, following official SUM assignment.
+e + N2 => e + N + N(2D) ! BOLSIG N2 -> N2(SUM)
+
+# Direct ionization; ZDPlasKin evolves electron density in timestep().
+e + N2 => e + e + N2^+ ! BOLSIG N2 -> N2^+
+
+
+# Dissociative recombination, branching from original air scheme [p.141].
+e + N2^+ => N + N     ! 9.0d-8*(300.d0/Te)**0.39d0
+e + N2^+ => N + N(2D) ! 8.1d-8*(300.d0/Te)**0.39d0
+e + N2^+ => N + N(2P) ! 9.0d-9*(300.d0/Te)**0.39d0
+e + N3^+ => N2 + N    ! 2.0d-7*(300.d0/Te)**0.5d0
+e + N4^+ => N2 + N2   ! 2.3d-6*(300.d0/Te)**0.53d0
+e + N^+ + e => N + e  ! 7.d-20*(300.d0/Te)**4.5d0
+e + N^+ + ANY_NEUTRAL => N + ANY_NEUTRAL ! 6.d-27*(300.d0/Te)**1.5d0
+
+# Ion conversion [original air scheme p.179].
+N2^+ + N => N^+ + N2 ! 7.2d-13*(TeffN2/300.d0)
+N3^+ + N => N2^+ + N2 ! 6.6d-11
+N4^+ + N => N^+ + N2 + N2 ! 1.d-11
+N4^+ + N2 => N2^+ + N2 + N2 ! 2.1d-16*exp(min(TeffN4/121.d0,log(1.d-10/2.1d-16)))
+N^+ + N2 + N2 => N3^+ + N2 ! 1.7d-29*(300.d0/TeffN)**2.1d0
+N^+ + N + ANY_NEUTRAL => N2^+ + ANY_NEUTRAL ! 1.d-29
+N2^+ + N2 + N2 => N4^+ + N2 ! 5.2d-29*(300.d0/TeffN2)**2.2d0
+N2^+ + N + N2 => N3^+ + N2 ! 9.d-30*exp(400.d0/TeffN2)
+
+# Radiative relaxation and heavy-particle quenching [pp.157,159].
+N2(A3) => N2 ! 0.5d0
+N2(B3) => N2(A3) ! 1.34d5
+N2(a1L) => N2 ! 1.d2
+N2(C3) => N2(B3) ! 2.45d7
+N2(A3) + N => N2 + N ! 2.d-12
+N2(A3) + N => N2 + N(2P) ! 4.d-11*(300.d0/Tgas)**0.667d0
+N2(A3) + N2 => N2 + N2 ! 3.d-16
+N2(A3) + N2(A3) => N2 + N2(B3) ! 3.d-10
+N2(A3) + N2(A3) => N2 + N2(C3) ! 1.5d-10
+N2(B3) + N2 => N2(A3) + N2 ! 3.d-11
+N2(B3) + N2 => N2 + N2 ! 2.d-12
+N2(C3) + N2 => N2(a1L) + N2 ! 1.d-11
+N2(a1L) + N2 => N2(B3) + N2 ! 1.9d-13
+N2(a1L) + N2(A3) => N4^+ + e ! 4.d-12
+N2(a1L) + N2(a1L) => N4^+ + e ! 1.d-11
+
+# Excited-atom deactivation [p.161 and Guerra2004 in original air file].
+N(2D) + N2 => N + N2 ! 1.d-13*exp(-510.d0/Tgas)
+N(2P) + N => N + N ! 1.8d-12
+N(2P) + N => N(2D) + N ! 6.d-13
+N(2P) + N2 => N + N2 ! 6.d-14
+N(2P) + N(2D) => N2^+ + e ! 1.d-13
+
+# Atomic association, original air scheme [pp.159,170].
+N + N + N2 => N2(A3) + N2 ! 1.7d-33
+N + N + N2 => N2(B3) + N2 ! 2.4d-33
+N + N + N => N2(A3) + N ! 1.d-32
+N + N + N => N2(B3) + N ! 1.4d-32
+N + N + N2 => N2 + N2 ! max(8.3d-34*exp(500.d0/Tgas),1.91d-33)
+N + N + N => N2 + N ! 5.4d-33*exp(435.d0/Tgas)
+
+# VT excitation / relaxation, v=1..8, with N2 and N partners [p.105].
+N2(v1) + N2 => N2 + N2 ! kVT10_N2N2*1.d0
+N2 + N2 => N2(v1) + N2 ! kVT01_N2N2*1.d0
+N2(v2) + N2 => N2(v1) + N2 ! kVT10_N2N2*2.d0
+N2(v1) + N2 => N2(v2) + N2 ! kVT01_N2N2*2.d0
+N2(v3) + N2 => N2(v2) + N2 ! kVT10_N2N2*3.d0
+N2(v2) + N2 => N2(v3) + N2 ! kVT01_N2N2*3.d0
+N2(v4) + N2 => N2(v3) + N2 ! kVT10_N2N2*4.d0
+N2(v3) + N2 => N2(v4) + N2 ! kVT01_N2N2*4.d0
+N2(v5) + N2 => N2(v4) + N2 ! kVT10_N2N2*5.d0
+N2(v4) + N2 => N2(v5) + N2 ! kVT01_N2N2*5.d0
+N2(v6) + N2 => N2(v5) + N2 ! kVT10_N2N2*6.d0
+N2(v5) + N2 => N2(v6) + N2 ! kVT01_N2N2*6.d0
+N2(v7) + N2 => N2(v6) + N2 ! kVT10_N2N2*7.d0
+N2(v6) + N2 => N2(v7) + N2 ! kVT01_N2N2*7.d0
+N2(v8) + N2 => N2(v7) + N2 ! kVT10_N2N2*8.d0
+N2(v7) + N2 => N2(v8) + N2 ! kVT01_N2N2*8.d0
+N2(v1) + N => N2 + N ! kVT10_N2N*1.d0
+N2 + N => N2(v1) + N ! kVT01_N2N*1.d0
+N2(v2) + N => N2(v1) + N ! kVT10_N2N*2.d0
+N2(v1) + N => N2(v2) + N ! kVT01_N2N*2.d0
+N2(v3) + N => N2(v2) + N ! kVT10_N2N*3.d0
+N2(v2) + N => N2(v3) + N ! kVT01_N2N*3.d0
+N2(v4) + N => N2(v3) + N ! kVT10_N2N*4.d0
+N2(v3) + N => N2(v4) + N ! kVT01_N2N*4.d0
+N2(v5) + N => N2(v4) + N ! kVT10_N2N*5.d0
+N2(v4) + N => N2(v5) + N ! kVT01_N2N*5.d0
+N2(v6) + N => N2(v5) + N ! kVT10_N2N*6.d0
+N2(v5) + N => N2(v6) + N ! kVT01_N2N*6.d0
+N2(v7) + N => N2(v6) + N ! kVT10_N2N*7.d0
+N2(v6) + N => N2(v7) + N ! kVT01_N2N*7.d0
+N2(v8) + N => N2(v7) + N ! kVT10_N2N*8.d0
+N2(v7) + N => N2(v8) + N ! kVT01_N2N*8.d0
+
+END
+

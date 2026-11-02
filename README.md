@@ -23,13 +23,28 @@ save_result(result, "outputs/my_nitrogen")
 
 入力設定は「ケースJSON＋反応CSV」の2ファイルです。`data/cases/` のJSONに粒子種・条件・第三体・電子衝突の対応をまとめ、`data/mechanisms/*.csv` に反応一覧を置いています。別途、対象ガスの断面積ファイルが必要です。新しい実行時依存パッケージは追加していません。[入力形式と追加手順](docs/GAS_CASES.md)を参照してください。
 
+## 反応経路解析
+
+計算後の `Result` から、全反応の速度、対象化学種への正味寄与、指定区間での積算寄与と順位、化学種と反応を結ぶグラフ用データを取得できます。
+
+```python
+from py3zdplaschem import analyze_pathways, save_pathways
+
+paths = analyze_pathways(result, species="N", time_range_s=(0.0, 1e-9))
+print(paths.production[:5])  # 生成側の積算寄与の上位5反応
+print(paths.loss[:5])        # 消滅側の積算寄与の上位5反応
+save_pathways(paths, "outputs/my_nitrogen/pathways/N")
+```
+
+窒素ノートブックにも解析・描画・保存を含めています。対象種は `TARGET_SPECIES`、区間は秒単位の `TIME_RANGE_S` で変更できます。積算は保存密度を用いる後処理なので、短い反応ピークには出力間隔を細かくして収束を確認してください。[解析方法と出力形式](docs/REACTION_PATHWAYS.md)を参照してください。
+
 2026-11-01、機能ごとのモジュール分割と出力先の統一を行いました。電流計算の試作は通常の計算・ノートブックから取り外し、コードを [archive/](archive/current_diagnostics_2026-11-01/README.md) に記録として保存しています。
 
 ## 基本実行
 
 窒素の基本ノートブックは [notebooks/run_nitrogen.ipynb](notebooks/run_nitrogen.ipynb) です。Pythonカーネルを選び、上から全セルを実行してください。既定は純N₂、21種・96反応、1000 Td、300 K、101325 Pa、初期電子・N₂⁺各10¹⁴ m⁻³、1 ns、1600エネルギーセルです。条件セルで変更できます。
 
-結果は `outputs/notebooks/nitrogen/` に保存します。密度・反応係数・診断JSON・グラフを保存し、電流は計算しません。
+結果は `outputs/notebooks/nitrogen/` に保存します。密度・反応係数・診断JSON・グラフに加え、`pathways/N/` に反応経路の解析配列・順位CSV・グラフJSON・寄与の図を保存します。対象種を変更した場合は、その名前のディレクトリになります。電流は計算しません。
 
 計算本体は `py3zdplaschem/chemistry/network.py` と `kernel.py`、電子計算は `electrons/mixture.py`、時間積分は `solvers/simulation.py` です。窒素の元入力は `samples/gases/nitrogen/` に保持しています。通常実行にZDPlasKin本体は必要ありません。[コードを読む順序](docs/ARCHITECTURE.md)も参照してください。
 
@@ -114,6 +129,6 @@ env_Py3ZDPlasChem/Scripts/python.exe -m unittest discover -s Py3ZDPlasChem-maste
 env_Py3ZDPlasChem/Scripts/python.exe Py3ZDPlasChem-master/verification/verify_modularization.py
 ```
 
-50件の自動テストと5 subtestsで、反応入力・任意元素の保存則・第三体効率・Jacobian・混合気体の電子計算・電界切替・生成消失診断を確認しました。
+60件の自動テストと10 subtestsで、反応入力・任意元素の保存則・第三体効率・Jacobian・混合気体の電子計算・電界切替・生成消失診断・反応経路解析を確認しました。
 
 共通経路の窒素21種・96反応を、元入力から再ビルドしたZDPlasKinと比較しました。1600セル・1 ns・10001時刻で、各粒子種の参照ピーク密度で規格化した最大差は、電子間衝突なしの対照に対して約0.32649%です。電子間衝突が自動的に有効になる元設定との差は約11.875%で、別に評価しています。元設定の再実行は保存済み結果と一致しました。[比較結果](outputs/verification/gas_generalization/nitrogen/README.md)・[検証の説明](verification/README.md)を参照してください。

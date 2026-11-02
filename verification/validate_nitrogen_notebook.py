@@ -71,17 +71,28 @@ for filename in [
     "coefficients.csv",
     "diagnostics.json",
     "densities.png",
+    "pathways/N/reaction_rates.npz",
+    "pathways/N/reaction_ranking.csv",
+    "pathways/N/pathway_graph.json",
+    "pathways/N/contributions.png",
 ]:
     assert (output / filename).is_file(), filename
 report = json.loads((output / "diagnostics.json").read_text(encoding="utf-8"))
 assert report["species_count"] == 21
 assert report["reaction_count"] == 96
 assert Path(report["python_executable"]).resolve() == kernel_python
+graph = json.loads(
+    (output / "pathways/N/pathway_graph.json").read_text(encoding="utf-8")
+)
+assert graph["species"] == "N"
+assert graph["nodes"] and graph["edges"]
+assert graph["weight_unit"] == "m^-3"
 result = dict(
     notebook=str(NOTEBOOK),
     executed_code_cells=len(code_cells),
     kernel_python=report["python_executable"],
     inline_plot_verified=True,
+    pathway_outputs_verified=True,
     species=21,
     reactions=96,
     max_atom_relative_error=report["max_atom_relative_error"],

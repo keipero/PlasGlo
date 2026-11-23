@@ -1,0 +1,460 @@
+{
+  "source_sha256": {
+    "Biagi_CO2_1027.txt": "c3af76eaad7f2f3d4ef37de8cb8212a7039a0dad10c796ab4cf38fa6fbf5b9bd",
+    "ISTLisbon_CO_TRINITI_COrot_1027.txt": "dd24d31861a322ca1c2d386c033360126a09d150b2c76335b90d850f8f84f3e3",
+    "Phelps_O2_1027.txt": "f135984601634e3e538ed959fe946cd5adf020f4c5d59768326261db1765caa8"
+  },
+  "profile": {
+    "cross_sections": [
+      "../../data/cross_sections/co2/Biagi_CO2_1027.txt",
+      "../../data/cross_sections/co2/ISTLisbon_CO_TRINITI_COrot_1027.txt",
+      "../../data/cross_sections/co2/Phelps_O2_1027.txt"
+    ],
+    "targets": {
+      "CO2": "CO2",
+      "CO": "CO",
+      "O2": "O2"
+    },
+    "channels": [
+      {
+        "id": "CO2->ATTACHMENT_000.000",
+        "target": "CO2",
+        "kind": "ATTACHMENT",
+        "product": "CO2",
+        "threshold_eV": 0.0,
+        "label": "CO2 attachment"
+      },
+      {
+        "id": "CO2->DISS_1DELTA_006.500",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 6.5,
+        "label": "CO2 diss_1Delta"
+      },
+      {
+        "id": "CO2->DISS_1DELTA_006.750",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 6.75,
+        "label": "CO2 diss_1Delta"
+      },
+      {
+        "id": "CO2->DISS_1DELTA_007.000",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 7.0,
+        "label": "CO2 diss_1Delta"
+      },
+      {
+        "id": "CO2->DISS_1DELTA_007.250",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 7.25,
+        "label": "CO2 diss_1Delta"
+      },
+      {
+        "id": "CO2->DISS_1DELTA_007.500",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 7.5,
+        "label": "CO2 diss_1Delta"
+      },
+      {
+        "id": "CO2->DISS_1DELTA_007.750",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 7.75,
+        "label": "CO2 diss_1Delta"
+      },
+      {
+        "id": "CO2->DISS_1DELTA_008.000",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 8.0,
+        "label": "CO2 diss_1Delta"
+      },
+      {
+        "id": "CO2->DISS_1DELTA_008.250",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 8.25,
+        "label": "CO2 diss_1Delta"
+      },
+      {
+        "id": "CO2->DISS_1DELTA_008.500",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 8.5,
+        "label": "CO2 diss_1Delta"
+      },
+      {
+        "id": "CO2->DISS_1DELTA_008.750",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 8.75,
+        "label": "CO2 diss_1Delta"
+      },
+      {
+        "id": "CO2->DISS_1PI_008.900",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 8.9,
+        "label": "CO2 diss_1Pi"
+      },
+      {
+        "id": "CO2->DISS_1PI_009.150",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 9.15,
+        "label": "CO2 diss_1Pi"
+      },
+      {
+        "id": "CO2->DISS_1PI_009.400",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 9.4,
+        "label": "CO2 diss_1Pi"
+      },
+      {
+        "id": "CO2->DISS_1PI_009.650",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 9.65,
+        "label": "CO2 diss_1Pi"
+      },
+      {
+        "id": "CO2->DISS_1PI_009.900",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 9.9,
+        "label": "CO2 diss_1Pi"
+      },
+      {
+        "id": "CO2->DISS_1PI_010.150",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 10.15,
+        "label": "CO2 diss_1Pi"
+      },
+      {
+        "id": "CO2->DISS_EXCITATION_011.048",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 11.048,
+        "label": "CO2 diss_excitation"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_013.780",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 13.78,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_014.000",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 14.0,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_014.250",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 14.25,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_014.500",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 14.5,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_014.750",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 14.75,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_015.000",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 15.0,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_015.250",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 15.25,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_015.500",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 15.5,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_015.750",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 15.75,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_016.000",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 16.0,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_016.250",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 16.25,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_016.500",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 16.5,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_016.750",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 16.75,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_017.000",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 17.0,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_017.250",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 17.25,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_017.500",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 17.5,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_017.750",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 17.75,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_018.000",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 18.0,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_018.250",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 18.25,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_018.500",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 18.5,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_018.750",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 18.75,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_019.000",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 19.0,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_019.250",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 19.25,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_019.500",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 19.5,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->DISS_DIPOLE_019.750",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO2",
+        "threshold_eV": 19.75,
+        "label": "CO2 diss_dipole"
+      },
+      {
+        "id": "CO2->ION_CO2P_013.776",
+        "target": "CO2",
+        "kind": "IONIZATION",
+        "product": "CO2",
+        "threshold_eV": 13.776,
+        "label": "CO2 ion_CO2+"
+      },
+      {
+        "id": "CO2->ION_CO2P_A_017.314",
+        "target": "CO2",
+        "kind": "IONIZATION",
+        "product": "CO2",
+        "threshold_eV": 17.314,
+        "label": "CO2 ion_CO2+_A"
+      },
+      {
+        "id": "CO2->ION_CO2P_B_018.077",
+        "target": "CO2",
+        "kind": "IONIZATION",
+        "product": "CO2",
+        "threshold_eV": 18.077,
+        "label": "CO2 ion_CO2+_B"
+      },
+      {
+        "id": "CO2->ION_OP_019.070",
+        "target": "CO2",
+        "kind": "IONIZATION",
+        "product": "CO2",
+        "threshold_eV": 19.07,
+        "label": "CO2 ion_O+"
+      },
+      {
+        "id": "CO2->ION_COP_019.470",
+        "target": "CO2",
+        "kind": "IONIZATION",
+        "product": "CO2",
+        "threshold_eV": 19.47,
+        "label": "CO2 ion_CO+"
+      },
+      {
+        "id": "CO->ATTACHMENT_000.000",
+        "target": "CO",
+        "kind": "ATTACHMENT",
+        "product": "C(X) + O(-,gnd)",
+        "threshold_eV": 0.0,
+        "label": "CO attachment"
+      },
+      {
+        "id": "CO->DISS_CO_011.100",
+        "target": "CO",
+        "kind": "EXCITATION",
+        "product": "C(X) + O(3P)",
+        "threshold_eV": 11.1,
+        "label": "CO diss_CO"
+      },
+      {
+        "id": "CO->ION_COP_014.010",
+        "target": "CO",
+        "kind": "IONIZATION",
+        "product": "CO(+,X)",
+        "threshold_eV": 14.01,
+        "label": "CO ion_CO+"
+      },
+      {
+        "id": "O2->ATTACHMENT_3BODY_000.000",
+        "target": "O2",
+        "kind": "ATTACHMENT",
+        "product": null,
+        "threshold_eV": 0.0,
+        "label": "O2 attachment_3body",
+        "density_normalization": {
+          "species": "O2",
+          "power": 1,
+          "density_unit": "cm^-3",
+          "coefficient_scale": 1e-06,
+          "virtual_target": "__O2_three_body__"
+        }
+      },
+      {
+        "id": "O2->ATTACHMENT_2BODY_000.000",
+        "target": "O2",
+        "kind": "ATTACHMENT",
+        "product": "O^-+O",
+        "threshold_eV": 0.0,
+        "label": "O2 attachment_2body"
+      },
+      {
+        "id": "O2->ION_O2P_012.060",
+        "target": "O2",
+        "kind": "IONIZATION",
+        "product": "O2^+",
+        "threshold_eV": 12.06,
+        "label": "O2 ion_O2+"
+      }
+    ]
+  }
+}

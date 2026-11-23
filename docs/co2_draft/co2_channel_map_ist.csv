@@ -1,0 +1,56 @@
+﻿file,target,kind,product,threshold_eV,category,source_comment,in_profile,channel_id,proposed_equation,status,note
+ISTLisbon_CO2_20261123.txt,CO2,ATTACHMENT,"CO(X) + O(-,X)",0,attachment,"[e + CO2(X,v=000) -> CO(X) + O(-,X), Attachment] Lowke, Phelps and Irwin 1973 J. Appl.",yes,CO2->ATTACHMENT_000.000,E + CO2 -> CO + O^-,explicit,"生成物は CO(X) + O(-,X)（Lowke, Phelps, Irwin 1973）"
+ISTLisbon_CO2_20261123.txt,CO2,ELASTIC,,0,elastic,"[e + CO2(X) -> e + CO2(X), Elastic] Lowke, Phelps and Irwin 1973 J. Appl. Phys. 44 4664",no,,,none,運動量移行。EEDFのみ
+ISTLisbon_CO2_20261123.txt,CO2,EXCITATION,CO2(v=010),0.083,vibration,"[e + CO2(X,v=000) <-> e + CO2(X,v=010), Vibrational] Lowke, Phelps and Irwin 1973 J.",no,,,none,振動励起。振動種を追跡しない限りEEDFのみ
+ISTLisbon_CO2_20261123.txt,CO2,EXCITATION,CO2(v=020),0.167,vibration,"[e + CO2(X,v=000) -> e + CO2(X,v=020), Vibrational] Lowke, Phelps and Irwin 1973 J.",no,,,none,振動励起。振動種を追跡しない限りEEDFのみ
+ISTLisbon_CO2_20261123.txt,CO2,EXCITATION,CO2(v=100),0.167,vibration,"[e + CO2(X,v=000) -> e + CO2(X,v=100), Vibrational] Lowke, Phelps and Irwin 1973 J.",no,,,none,振動励起。振動種を追跡しない限りEEDFのみ
+ISTLisbon_CO2_20261123.txt,CO2,EXCITATION,CO2(v=030+110),0.252,vibration,"[e + CO2(X,v=000) -> e + CO2(X,v=030+110), Vibrational] Lowke, Phelps and Irwin 1973 J.",no,,,none,振動励起。振動種を追跡しない限りEEDFのみ
+ISTLisbon_CO2_20261123.txt,CO2,EXCITATION,CO2(v=001),0.291,vibration,"[e + CO2(X,v=000) -> e + CO2(X,v=001), Vibrational] Lowke, Phelps and Irwin 1973 J.",no,,,none,振動励起。振動種を追跡しない限りEEDFのみ
+ISTLisbon_CO2_20261123.txt,CO2,EXCITATION,CO2(v=040+120+011),0.339,vibration,"[e + CO2(X,v=000) -> e + CO2(X,v=040+120+011), Vibrational] Lowke, Phelps and Irwin",no,,,none,振動励起。振動種を追跡しない限りEEDFのみ
+ISTLisbon_CO2_20261123.txt,CO2,EXCITATION,"CO2(X,v=200)",0.339,vibration,"[e + CO2(X,v=000) -> e + CO2(X,v=200), Vibrational] Lowke, Phelps and Irwin 1973 J.",no,,,none,振動励起。振動種を追跡しない限りEEDFのみ
+ISTLisbon_CO2_20261123.txt,CO2,EXCITATION,"CO2(X,v=050+210+130+021+101)",0.422,vibration,"[e + CO2(X,v=000) -> e + CO2(X,v=050+210+130+021+101), Vibrational] Lowke, Phelps and",no,,,none,振動励起。振動種を追跡しない限りEEDFのみ
+ISTLisbon_CO2_20261123.txt,CO2,EXCITATION,"CO2(X,v=300)",0.5,vibration,"[e + CO2(X,v=000) -> e + CO2(X,v=300), Vibrational] Lowke, Phelps and Irwin 1973 J.",no,,,none,振動励起。振動種を追跡しない限りEEDFのみ
+ISTLisbon_CO2_20261123.txt,CO2,EXCITATION,"CO2(X,v=060+220+140)",0.505,vibration,"[e + CO2(X,v=000) -> e + CO2(X,v=060+220+140), Vibrational] Lowke, Phelps and Irwin",no,,,none,振動励起。振動種を追跡しない限りEEDFのみ
+ISTLisbon_CO2_20261123.txt,CO2,EXCITATION,CO(a3P) + O(3P),10.5,diss_10p5eV,"[e +CO2(X,v=000) -> e + CO(a3P) + O(3P), Excitation] Lowke, Phelps and Irwin 1973 J.",yes,CO2->DISS_10P5EV_010.500,E + CO2 -> E + CO(a3Pi) + O,explicit,全て解離。励起種 CO(a3Pi) を機構に入れる必要。Oは基底3P
+ISTLisbon_CO2_20261123.txt,CO2,EXCITATION,"CO2(X,v=0n0+n00)",2.5,vibration,"[e + CO2(X,v=000) -> e + CO2(X,v=0n0+n00), Vibrational] Lowke, Phelps and Irwin 1973 J.",no,,,none,振動励起。振動種を追跡しない限りEEDFのみ
+ISTLisbon_CO2_20261123.txt,CO2,EXCITATION,CO(X) + O(1D),7,diss_7eV,"[e + CO2(X,v=000) -> e + CO(X) + O(1D), Excitation] Lowke, Phelps and Irwin 1973 J.",yes,CO2->DISS_7EV_007.000,E + CO2 -> E + CO + O(1D),explicit,7 eV の過程の15%（Liu 2025）。励起種 O(1D) を機構に入れる必要
+ISTLisbon_CO2_20261123.txt,CO2,EXCITATION,CO2(e1),7,exc_7eV_e1,"[e + CO2(X,v=000) -> e + CO2(e1), Excitation] Lowke, Phelps and Irwin 1973 J. Appl.",no,,,none,7 eV の過程の85%（解離しない分）。EEDFのみ
+ISTLisbon_CO2_20261123.txt,CO2,IONIZATION,"CO2(+,X)",13.8,ion_CO2+,"[e + CO2(X,v=000) -> e + e + CO2(+,X), Ionization] Itikawa 2002 J. Phys. Chem. Ref.",yes,CO2->ION_CO2P_013.800,E + CO2 -> E + E + CO2^+,explicit,Itikawa 2002。解離性電離は無い
+ISTLisbon_CO_TRINITI_COrot_1027.txt,CO,ATTACHMENT,"C(X) + O(-,gnd)",0,attachment,"[e + CO(X,v=0) -> C(X) + O(-,gnd), Attachment] Rapp D and Briglia D D 1965 J. Chem.",yes,CO->ATTACHMENT_000.000,E + CO -> C + O^-,assumption,生成物は C(X)+O(-)。Cを追跡しない場合は除外
+ISTLisbon_CO_TRINITI_COrot_1027.txt,CO,ELASTIC,,0,momentum,"[e + CO(X) -> e + CO(X), Elastic] Itikawa Y 2015 J. Phys. Chem. Ref. Data 44 013105",no,,,none,運動量移行。EEDFのみ
+ISTLisbon_CO_TRINITI_COrot_1027.txt,CO,EXCITATION,CO (v=0-v=1),0.266,vibration,"[e + CO(X,v=0) <-> e + CO(X,v=1), Vibrational] Phelps A V 1968 Rev. Mod. Phys. 40",no,,,none,振動励起。超弾性はPlasGloで未対応（順方向のみ使用）
+ISTLisbon_CO_TRINITI_COrot_1027.txt,CO,EXCITATION,CO (v=0-v=2),0.54,vibration,"[e + CO(X,v=0) <-> e + CO(X,v=2), Vibrational] Laporta V, Cassidy C M, Tennyson J",no,,,none,振動励起。超弾性はPlasGloで未対応（順方向のみ使用）
+ISTLisbon_CO_TRINITI_COrot_1027.txt,CO,EXCITATION,CO (v=0-v=3),0.81,vibration,"[e + CO(X,v=0) <-> e + CO(X,v=3), Vibrational] Laporta V, Cassidy C M, Tennyson J",no,,,none,振動励起。超弾性はPlasGloで未対応（順方向のみ使用）
+ISTLisbon_CO_TRINITI_COrot_1027.txt,CO,EXCITATION,CO (v=0-v=4),1.07,vibration,"[e + CO(X,v=0) <-> e + CO(X,v=4), Vibrational] Laporta V, Cassidy C M, Tennyson J",no,,,none,振動励起。超弾性はPlasGloで未対応（順方向のみ使用）
+ISTLisbon_CO_TRINITI_COrot_1027.txt,CO,EXCITATION,CO (v=0-v=5),1.33,vibration,"[e + CO(X,v=0) <-> e + CO(X,v=5), Vibrational] Laporta V, Cassidy C M, Tennyson J",no,,,none,振動励起。超弾性はPlasGloで未対応（順方向のみ使用）
+ISTLisbon_CO_TRINITI_COrot_1027.txt,CO,EXCITATION,CO (v=0-v=6),1.59,vibration,"[e + CO(X,v=0) <-> e + CO(X,v=6), Vibrational] Laporta V, Cassidy C M, Tennyson J",no,,,none,振動励起。超弾性はPlasGloで未対応（順方向のみ使用）
+ISTLisbon_CO_TRINITI_COrot_1027.txt,CO,EXCITATION,CO (v=0-v=7),1.84,vibration,"[e + CO(X,v=0) <-> e + CO(X,v=7), Vibrational] Laporta V, Cassidy C M, Tennyson J",no,,,none,振動励起。超弾性はPlasGloで未対応（順方向のみ使用）
+ISTLisbon_CO_TRINITI_COrot_1027.txt,CO,EXCITATION,CO (v=0-v=8),2.09,vibration,"[e + CO(X,v=0) <-> e + CO(X,v=8), Vibrational] Laporta V, Cassidy C M, Tennyson J",no,,,none,振動励起。超弾性はPlasGloで未対応（順方向のみ使用）
+ISTLisbon_CO_TRINITI_COrot_1027.txt,CO,EXCITATION,CO (v=0-v=9),2.33,vibration,"[e + CO(X,v=0) <-> e + CO(X,v=9), Vibrational] Laporta V, Cassidy C M, Tennyson J",no,,,none,振動励起。超弾性はPlasGloで未対応（順方向のみ使用）
+ISTLisbon_CO_TRINITI_COrot_1027.txt,CO,EXCITATION,CO (v=0-v=10),2.58,vibration,"[e + CO(X,v=0) <-> e + CO(X,v=10), Vibrational] Laporta V, Cassidy C M, Tennyson J",no,,,none,振動励起。超弾性はPlasGloで未対応（順方向のみ使用）
+ISTLisbon_CO_TRINITI_COrot_1027.txt,CO,EXCITATION,CO(a3P),6.006,excitation_other,"[e + CO(X,v=0) -> e + CO(a3P), Excitation] Sawada T, Sellin D L and Green A E S 1972 J.",no,,,none,電子励起。EEDFのみ
+ISTLisbon_CO_TRINITI_COrot_1027.txt,CO,EXCITATION,CO(a'3Su+),6.8,excitation_other,"[e + CO(X,v=0) -> e + CO(a'3Su+), Excitation] Sawada T, Sellin D L and Green A E S",no,,,none,電子励起。EEDFのみ
+ISTLisbon_CO_TRINITI_COrot_1027.txt,CO,EXCITATION,CO(A1P),8.024,excitation_other,"[e + CO(X,v=0) -> e + CO(A1P), Excitation] Kato H, Kawahara H, Hoshino M, Tanaka H,",no,,,none,電子励起。EEDFのみ
+ISTLisbon_CO_TRINITI_COrot_1027.txt,CO,EXCITATION,CO(b3Su+),10.399,excitation_other,"[e + CO(X,v=0) -> e + CO(b3Su+), Excitation] Sawada T, Sellin D L and Green A E S 1972",no,,,none,電子励起。EEDFのみ
+ISTLisbon_CO_TRINITI_COrot_1027.txt,CO,EXCITATION,CO(B1Su+),10.777,excitation_other,"[e + CO(X,v=0) -> e + CO(B1Su+), Excitation] Kanik I, Trajmar S and Nickel J C 1993 J.",no,,,none,電子励起。EEDFのみ
+ISTLisbon_CO_TRINITI_COrot_1027.txt,CO,EXCITATION,C(X) + O(3P),11.1,diss_CO,"[e + CO(X,v=0) -> e + C(X) + O(3P), Excitation] Cosby P C 1993 J. Chem. Phys. 98 7804",yes,CO->DISS_CO_011.100,E + CO -> E + C + O,assumption,C原子を追跡しない場合は除外
+ISTLisbon_CO_TRINITI_COrot_1027.txt,CO,EXCITATION,CO(C1Su+),11.396,excitation_other,"[e + CO(X,v=0) -> e + CO(C1Su+), Excitation]  Kawanhara H, Kato H, Hoshino M, Tanaka H",no,,,none,電子励起。EEDFのみ
+ISTLisbon_CO_TRINITI_COrot_1027.txt,CO,EXCITATION,CO(E1P),11.524,excitation_other,"[e + CO(X,v=0) -> e + CO(E1P), Excitation] Kawanhara H, Kato H, Hoshino M, Tanaka H and",no,,,none,電子励起。EEDFのみ
+ISTLisbon_CO_TRINITI_COrot_1027.txt,CO,IONIZATION,"CO(+,X)",14.01,ion_CO+,"[e + CO(X,v=0) -> e + e + CO(+,X), Ionization] Rapp D and Englander-Golden P 1965 J.",yes,CO->ION_COP_014.010,E + CO -> E + E + CO^+,assumption,
+Phelps_O2_1027.txt,O2,ATTACHMENT,,0,attachment_3body,3-body attachment : 3 body attachment cross section are normalized to gas density in units,yes,O2->ATTACHMENT_3BODY_000.000,E + O2 + M -> O2^- + M,assumption,三体付着。密度規格化（空気ケースC27と同じ設定）が必要
+Phelps_O2_1027.txt,O2,ATTACHMENT,O^-+O,0,attachment_2body,2-body attachment.,yes,O2->ATTACHMENT_2BODY_000.000,E + O2 -> O^- + O,none,
+Phelps_O2_1027.txt,O2,EFFECTIVE,,0,momentum,Effective momentum transfer.,no,,,none,運動量移行。EEDFのみ
+Phelps_O2_1027.txt,O2,EXCITATION,O2(rot),0.02,excitation_other,O2 single level approximation to peaked rotational. T=300K.,no,,,none,O2 single level approximation to peaked rotational. T=300K.
+Phelps_O2_1027.txt,O2,EXCITATION,O2(v1),0.19,excitation_other,"O2 v=1, Linder and Schmidt with split peak.",no,,,none,"O2 v=1, Linder and Schmidt with split peak."
+Phelps_O2_1027.txt,O2,EXCITATION,O2(v1res),0.19,excitation_other,"O2 v=1, 9V resonance of WONG ET AL NORM TO TRAJMAR ET AL.",no,,,none,"O2 v=1, 9V resonance of WONG ET AL NORM TO TRAJMAR ET AL."
+Phelps_O2_1027.txt,O2,EXCITATION,O2(v2),0.38,excitation_other,"O2 v=2, Linder and Schmidt.",no,,,none,"O2 v=2, Linder and Schmidt."
+Phelps_O2_1027.txt,O2,EXCITATION,O2(v2res),0.38,excitation_other,O2 v=2 9V resonnance OF WONG ET AL NORM TO TRAJMAR ET AL.,no,,,none,O2 v=2 9V resonnance OF WONG ET AL NORM TO TRAJMAR ET AL.
+Phelps_O2_1027.txt,O2,EXCITATION,O2(v3),0.57,excitation_other,O2 v=3 - LINDER AND SCHMIDT WITH 9EV RES FROM WONG-TRAJMAR.,no,,,none,O2 v=3 - LINDER AND SCHMIDT WITH 9EV RES FROM WONG-TRAJMAR.
+Phelps_O2_1027.txt,O2,EXCITATION,O2(v4),0.75,excitation_other,O2 v=4 LINDER AND SCHMIDT WITH 9EV RESONANCE FROM WONG-TRAJMAR.,no,,,none,O2 v=4 LINDER AND SCHMIDT WITH 9EV RESONANCE FROM WONG-TRAJM
+Phelps_O2_1027.txt,O2,EXCITATION,O2(a1),0.977,excitation_other,O2 singlet delta metastable level; FROM LINDER-SCHMIDT AND TRAJMAR ET AL.,no,,,none,O2 singlet delta metastable level; FROM LINDER-SCHMIDT AND T
+Phelps_O2_1027.txt,O2,EXCITATION,O2(b1),1.627,excitation_other,O2 B singlet sigma from LINDER-SCHMIDT AND TRAJMAR ET AL.,no,,,none,O2 B singlet sigma from LINDER-SCHMIDT AND TRAJMAR ET AL.
+Phelps_O2_1027.txt,O2,EXCITATION,O2(4.5eV),4.5,excitation_other,O2 4.5 eV energy loss.,no,,,none,O2 4.5 eV energy loss.
+Phelps_O2_1027.txt,O2,EXCITATION,O2(6.0eV),6,excitation_dissoc_candidate,O2 6.0 eV energy loss.,no,,,review,O2の解離を伴う可能性がある励起。いまはEEDFの損失のみ
+Phelps_O2_1027.txt,O2,EXCITATION,O2(8.4eV),8.4,excitation_dissoc_candidate,"O2 8.4 eV energy loss, HAYASHI ABOVE 20EV - CHANTRY BELOW.",no,,,review,O2の解離を伴う可能性がある励起。いまはEEDFの損失のみ
+Phelps_O2_1027.txt,O2,EXCITATION,O2(9.97eV),9.97,excitation_other,"O2 9.97 eV energy loss, Trajmar.",no,,,none,"O2 9.97 eV energy loss, Trajmar."
+Phelps_O2_1027.txt,O2,IONIZATION,O2^+,12.06,ion_O2+,Total ionization.,yes,O2->ION_O2P_012.060,E + O2 -> E + E + O2^+,none,

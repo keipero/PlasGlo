@@ -307,8 +307,63 @@ class ElectronSwarm:
             coarse_max_eV,
             adaptive_factor,
         )
+        # 格子の上限が adaptive_factor × 平均エネルギーの 1/regrid_ratio〜
+        # regrid_ratio 倍から外れたら、格子を作り直して解き直す。
+        self.regrid_ratio = 2.0
+        self.max_regrids = 3
+        self.regrid_count = 0
         self.eedf = self.last_field_td = None
         self.solve_count = 0
+
+    def _adapt_grid(self):
+        r"""粗い格子で解いて平均エネルギーを求め、適応格子を設定する。
+
+        履歴に依存しない初期化手順で、最初の計算と、E/Nが大きく変わって
+        格子を作り直すときに使う。戻り値は、新しい格子上の初期推定値。
+
+        Returns
+        -------
+        numpy.ndarray
+            適応格子上のEEDFの初期推定値。
+
+        Raises
+        ------
+        RuntimeError
+            ソルバーが収束しないか、計算した物理量が不正な場合。
+
+        Examples
+        --------
+        >>> from plasglo import load_case
+        >>> from plasglo.electrons.mixture import ElectronSwarm
+        >>> profile = load_case("argon").electron_settings()[
+        ...     "profile_data"
+        ... ]
+        >>> backend = ElectronSwarm(
+        ...     profile["cross_sections"], profile["targets"],
+        ...     profile["channels"], cells=100,
+        ... )
+        >>> backend.bsolver.EN = 51.0 * solver.TOWNSEND
+        >>> backend.bsolver.kT = 301.0 * solver.KB / solver.ELECTRONVOLT
+        >>> for target in backend.targets:
+        ...     backend.bsolver.set_density(target, 1.0)
+        >>> backend._adapt_grid().shape
+        (100,)
+        """
+        b = self.bsolver
+        b.grid = grid.LinearGrid(0, self.coarse_max_eV, self.cells)
+        b.init()
+        coarse = b.grid
+        f = b.converge(
+            b.maxwell(2.0),
+            maxn=self.max_iterations,
+            rtol=self.rtol,
+        )
+        b.grid = grid.QuadraticGrid(
+            0, self.adaptive_factor * b.mean_energy(f), self.cells
+        )
+        b.init()
+        self.regrid_count += 1
+        return b.grid.interpolate(f, coarse)
 
     def solve(self, field_td, densities, gas_temperature=300.0) -> SwarmState:
         r"""宣言した標的の密度に対する定常EEDFを求める。
@@ -408,19 +463,7 @@ class ElectronSwarm:
                         guess = self.eedf
                     b.init()
                 elif self.eedf is None or self.last_field_td == 0:
-                    b.grid = grid.LinearGrid(0, self.coarse_max_eV, self.cells)
-                    b.init()
-                    coarse = b.grid
-                    f = b.converge(
-                        b.maxwell(2.0),
-                        maxn=self.max_iterations,
-                        rtol=self.rtol,
-                    )
-                    b.grid = grid.QuadraticGrid(
-                        0, self.adaptive_factor * b.mean_energy(f), self.cells
-                    )
-                    b.init()
-                    guess = b.grid.interpolate(f, coarse)
+                    guess = self._adapt_grid()
                 else:
                     b.init()
                     guess = self.eedf
@@ -431,6 +474,25 @@ class ElectronSwarm:
                     full=True,
                     delta0=1e20 if field_td == 0 else 1e14,
                 )
+                # E/Nが大きく変わると、以前の格子の上限が平均エネルギーに
+                # 合わなくなる。上限が小さすぎると高しきい値の過程が切り捨て
+                # られ、大きすぎると低エネルギー側の分解能が落ちる。
+                for _ in range(self.max_regrids if field_td != 0 else 0):
+                    target = self.adaptive_factor * float(b.mean_energy(f))
+                    if (
+                        target / self.regrid_ratio
+                        <= b.grid.x1
+                        <= target * self.regrid_ratio
+                    ):
+                        break
+                    guess = self._adapt_grid()
+                    f, iterations, error = b.converge(
+                        guess,
+                        maxn=self.max_iterations,
+                        rtol=self.rtol,
+                        full=True,
+                        delta0=1e14,
+                    )
                 f, minimum, repaired = normalize_eedf(b, f)
                 raw = np.array([b.rate(f, p) for p in self.processes])
                 energy = float(b.mean_energy(f))

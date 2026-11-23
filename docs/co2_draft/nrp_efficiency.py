@@ -91,7 +91,8 @@ def efficiency_at(swarm, td, densities, gas_temperature=300.0):
     Returns
     -------
     dict
-        ``cost_eV``（解離1回あたり）、``efficiency``、``mean_eV``、
+        ``cost_eV``（解離1回あたり）、``efficiency``、``power``（電子1個、
+        気体分子1個あたりの入力電力 [eV m^3/s]）、``mean_eV``、
         ``partition``（区分名から入力電力の割合）。
     """
     # E/N が大きく変わる走査では、エネルギー格子が最初の E/N に引きずられる
@@ -112,7 +113,7 @@ def efficiency_at(swarm, td, densities, gas_temperature=300.0):
     parts[GROUPS[5]] = max(power - sum(parts.values()), 0.0)
     cost = power / diss if diss > 0 else float("inf")
     return dict(
-        cost_eV=cost, efficiency=ENTHALPY_EV / cost,
+        cost_eV=cost, efficiency=ENTHALPY_EV / cost, power=power,
         mean_eV=float(b.mean_energy(f)),
         partition={k: v / power for k, v in parts.items()},
     )

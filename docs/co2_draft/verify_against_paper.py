@@ -10,6 +10,9 @@ r"""LoKI-GM の反応機構を、原典の論文の表と数値で照合する�
   of CO2 in Non-Equilibrium Plasmas", Plasma Process. Polym. 14,
   1600155 (2017) の Table A3・A4。``CO2_novib.chem`` の「%Koelman」と
   注記された反応と比べる。
+- B. Loenders, R. Michiels, A. Bogaerts の Supporting Information
+  （プラズマ触媒による CO2 分解の微視的反応速度の研究）の Table S1。
+  CO(a3P)・O(1D) の反応と比べる（``LOENDERS`` のコメント参照）。
 
 ``PAPER``・``KOELMAN`` の式は、論文の表を目で読んで書き写したもの
 （Tg は K、速度係数は m^3/s と m^6/s）。LoKI 側は、該当行を
@@ -183,6 +186,54 @@ KOELMAN = {
 }
 
 
+# B. Loenders, R. Michiels, A. Bogaerts, "How plasma reaction conditions
+# affect the optimal catalyst: A microkinetic study of plasma-catalytic
+# CO2 splitting" の Supporting Information, Table S1（単位 cm^3/s。
+# ここでは m^3/s に換算）。CO(a3P) の反応は Cenian et al. 1994
+# （Contrib. Plasma Phys. 34, 25）、O(1D) + CO2 は Dunlea &
+# Ravishankara 2004 の値。LoKI は CO(a3P) の反応に、別の出典
+# （Wysong 2000、Skrzypkowski 1999）を使っている。
+CM3 = 1e-6
+LOENDERS = {
+    "S1 O(1D)+CO2": (
+        f"{D} + {CO2X} -> {P} + {CO2X}",
+        lambda t: 0.74e-10 * CM3 * exp(133 / t),
+    ),
+    "S1 CO+ + CO2": (
+        f"{COP} + {CO2X} -> {CO2P} + {COX}",
+        lambda t: 1e-9 * CM3,
+    ),
+    "S1 CO(a)+O2 -> CO+O2": (
+        f"CO(a3P) + {O2X} -> {COX} + {O2X}",
+        lambda t: 5.0e-11 * CM3,
+    ),
+    "S1 CO(a)+O2 -> CO+2O": (
+        f"CO(a3P) + {O2X} -> {COX} + 2{P}",
+        lambda t: 5.0e-11 * CM3,
+    ),
+    "S1 CO(a)+O2 -> CO2+O": (
+        f"CO(a3P) + {O2X} -> {CO2X} + {P}",
+        lambda t: 3.0e-11 * CM3,
+    ),
+    "S1 CO(a)+CO -> 2CO": (
+        f"CO(a3P) + {COX} -> 2{COX}",
+        lambda t: 1.4e-10 * CM3,
+    ),
+    "S1 CO(a)+CO -> CO2+C": (
+        f"CO(a3P) + {COX} -> {CO2X} + {CX}",
+        lambda t: 1.4e-12 * CM3,
+    ),
+    "S1 CO(a)+CO2 -> CO+CO2": (
+        f"CO(a3P) + {CO2X} -> {COX} + {CO2X}",
+        lambda t: 1.5e-11 * CM3,
+    ),
+    "S1 CO(a)+CO2 -> 2CO+O": (
+        f"CO(a3P) + {CO2X} -> 2{COX} + {P}",
+        lambda t: 1.5e-11 * CM3,
+    ),
+}
+
+
 def loki_value(item, tg, te_ev):
     r"""LoKI の1行の速度係数を、変換と同じ式で評価する。
 
@@ -264,6 +315,12 @@ def main():
     papers = [
         ("Dias 2023（酸素。Table 1・2）", "oxygen_novib.chem", PAPER, PAPER_TE),
         ("Koelman 2017（Table A3・A4）", "CO2_novib.chem", KOELMAN, None),
+        (
+            "Loenders らの SI（Table S1。CO(a)・O(1D) の反応）",
+            "CO2_novib.chem",
+            LOENDERS,
+            None,
+        ),
     ]
     for title, name, paper, paper_te in papers:
         rows = compare(loki / name, paper, paper_te)

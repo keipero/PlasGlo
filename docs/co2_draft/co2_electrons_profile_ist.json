@@ -1,0 +1,108 @@
+{
+  "source_sha256": {
+    "ISTLisbon_CO2_20261123.txt": "25b5dfe7e256f60d05b3a9e320085adfa12576dd61df4d726daab49762689b57",
+    "ISTLisbon_CO_TRINITI_COrot_1027.txt": "dd24d31861a322ca1c2d386c033360126a09d150b2c76335b90d850f8f84f3e3",
+    "Phelps_O2_1027.txt": "f135984601634e3e538ed959fe946cd5adf020f4c5d59768326261db1765caa8"
+  },
+  "profile": {
+    "cross_sections": [
+      "../../data/cross_sections/co2/ISTLisbon_CO2_20261123.txt",
+      "../../data/cross_sections/co2/ISTLisbon_CO_TRINITI_COrot_1027.txt",
+      "../../data/cross_sections/co2/Phelps_O2_1027.txt"
+    ],
+    "targets": {
+      "CO2": "CO2",
+      "CO": "CO",
+      "O2": "O2"
+    },
+    "channels": [
+      {
+        "id": "CO2->ATTACHMENT_000.000",
+        "target": "CO2",
+        "kind": "ATTACHMENT",
+        "product": "CO(X) + O(-,X)",
+        "threshold_eV": 0.0,
+        "label": "CO2 attachment"
+      },
+      {
+        "id": "CO2->DISS_10P5EV_010.500",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO(a3P) + O(3P)",
+        "threshold_eV": 10.5,
+        "label": "CO2 diss_10p5eV"
+      },
+      {
+        "id": "CO2->DISS_7EV_007.000",
+        "target": "CO2",
+        "kind": "EXCITATION",
+        "product": "CO(X) + O(1D)",
+        "threshold_eV": 7.0,
+        "label": "CO2 diss_7eV"
+      },
+      {
+        "id": "CO2->ION_CO2P_013.800",
+        "target": "CO2",
+        "kind": "IONIZATION",
+        "product": "CO2(+,X)",
+        "threshold_eV": 13.8,
+        "label": "CO2 ion_CO2+"
+      },
+      {
+        "id": "CO->ATTACHMENT_000.000",
+        "target": "CO",
+        "kind": "ATTACHMENT",
+        "product": "C(X) + O(-,gnd)",
+        "threshold_eV": 0.0,
+        "label": "CO attachment"
+      },
+      {
+        "id": "CO->DISS_CO_011.100",
+        "target": "CO",
+        "kind": "EXCITATION",
+        "product": "C(X) + O(3P)",
+        "threshold_eV": 11.1,
+        "label": "CO diss_CO"
+      },
+      {
+        "id": "CO->ION_COP_014.010",
+        "target": "CO",
+        "kind": "IONIZATION",
+        "product": "CO(+,X)",
+        "threshold_eV": 14.01,
+        "label": "CO ion_CO+"
+      },
+      {
+        "id": "O2->ATTACHMENT_3BODY_000.000",
+        "target": "O2",
+        "kind": "ATTACHMENT",
+        "product": null,
+        "threshold_eV": 0.0,
+        "label": "O2 attachment_3body",
+        "density_normalization": {
+          "species": "O2",
+          "power": 1,
+          "density_unit": "cm^-3",
+          "coefficient_scale": 1e-06,
+          "virtual_target": "__O2_three_body__"
+        }
+      },
+      {
+        "id": "O2->ATTACHMENT_2BODY_000.000",
+        "target": "O2",
+        "kind": "ATTACHMENT",
+        "product": "O^-+O",
+        "threshold_eV": 0.0,
+        "label": "O2 attachment_2body"
+      },
+      {
+        "id": "O2->ION_O2P_012.060",
+        "target": "O2",
+        "kind": "IONIZATION",
+        "product": "O2^+",
+        "threshold_eV": 12.06,
+        "label": "O2 ion_O2+"
+      }
+    ]
+  }
+}

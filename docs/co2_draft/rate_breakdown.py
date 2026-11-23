@@ -1,6 +1,6 @@
-r"""純CO2の電子衝突係数をカテゴリ別に出し、未解決点の影響度を見積もる。
+r"""Biagi の純CO2の電子衝突係数をカテゴリ別に出し、解離の内訳を見積もる。
 
-CO2の全過程（弾性を除く91本）をチャンネルとして宣言し、分類ごとの反応係数を
+Biagi は、CO2の全過程（弾性を除く91本）をチャンネルとして宣言し、分類ごとの反応係数を
 E/Nごとに表示する。E/Nごとに ``ElectronSwarm`` を作り直す（格子の履歴依存を
 避けるため。README 参照）。
 """
@@ -39,8 +39,9 @@ def main():
         "--source-dir",
         help="断面積ファイルのフォルダ（既定：環境変数 CO2_XS_DIR）",
     )
+    b.CO2_SET = "biagi"
     b.set_source_dir(ap.parse_args().source_dir)
-    path = b.SOURCE_DIR / b.SOURCES["CO2"]
+    path = b.SOURCE_DIR / b.CO2_FILES["biagi"]
     with path.open(encoding="utf-8") as fp:
         collisions = b.parser.parse(fp)
     channels, category = [], {}
